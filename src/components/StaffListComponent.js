@@ -20,14 +20,12 @@ class StaffList extends Component {
     this.onColSelect = this.onColSelect.bind(this);
   }
 
-  onStaffSelect(dish) {
-    this.setState({ selectedStaff: dish });
+  onStaffSelect(staff) {
+    this.setState({ selectedStaff: staff });
   }
   onColSelect(event) {
     this.setState({selectedCol: event.target.value });
   }
-
-
  
   renderStaff(staff) {
     if (staff != null)

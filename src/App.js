@@ -1,9 +1,12 @@
 import './App.css';
 import React, { Component } from 'react';
 import StaffList from './components/StaffListComponent';
+import Header from './components/HeaderComponent';
+import Footer from './components/FooterComponent';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
 import { STAFFS } from './shared/staff';
+
 
 class App extends Component {  
     
@@ -18,12 +21,9 @@ class App extends Component {
     
     return (
       <div>
-        <Navbar dark className="bg-dark p-4">
-          <div className='container'>
-            <NavbarBrand href='/'>Ứng dụng quản lý nhân sự version 1.0</NavbarBrand>
-          </div>
-        </Navbar>
+        <Header />
         <StaffList staffs={this.state.staffs} />
+        <Footer />
       </div>
     );
   }  
