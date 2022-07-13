@@ -59,22 +59,20 @@ class Header extends Component {
           <div className="btn btn-outline-warning">
             <i className="fa fa-database" aria-hidden="true"></i> HRM App
           </div>
-        </NavbarBrand>
-        
+        </NavbarBrand>   
+        <Form className="d-flex me-5" role="search">
+          <Input className="form-control" type="search" placeholder="Nhập tên nhân viên" aria-label="Search" />
+          <Button className="btn btn-success" type="submit">Search</Button>
+        </Form>      
         <NavbarToggler className="bg-warning" onClick={this.toggleNav}>
           <i class="fa fa-bars" aria-hidden="true"></i>
         </NavbarToggler>
-        <Form className="d-flex nav-item" role="search">
-          <Input class="form-control" type="search" placeholder="Nhập tên nhân viên" aria-label="Search" />
-          <Button class="btn btn-outline-success" type="submit">Search</Button>
-        </Form>
         <Collapse
           className="navbar-collapse justify-content-end"
           isOpen={this.state.isNavOpen}
           navbar
-        >
-          
-          <Nav navbar>          
+        >                  
+          <Nav navbar className="">          
             <NavItem>
               <NavLink
                 className="nav-item btn btn-outline-warning rounded-pill me-2 mt-2"
@@ -117,6 +115,7 @@ class Header extends Component {
               </NavLink>
             </NavItem>
           </Nav>
+          
         </Collapse>
       </Navbar>
     );
