@@ -39,7 +39,7 @@ const RenderSalary = ({ staff }) => {
     const salary = props.staffs.map((staff) => {
       return (
         <div className="col-md-4" key={staff.id}>
-          <div className="bg-dark text-warning rounded-3">
+          <div className="bg-dark text-info rounded-3">
             <RenderSalary staff={staff} />
           </div>
         </div>

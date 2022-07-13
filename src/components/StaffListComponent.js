@@ -78,6 +78,13 @@ class StaffList extends Component {
 
     return (
       <div className="container p-2 rounded-3 mt-2">
+        <hr />
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <Link to="/homepage">Home</Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem active>Staff list</BreadcrumbItem>
+        </Breadcrumb>
         <div className="row bg-warning p-4 rounded-3">          
             <div className="col-7 text-center">
               <h4>
@@ -96,14 +103,8 @@ class StaffList extends Component {
                 <option value="col-4 mt-2">3 cột</option>
               </select>
             </div>        
-        </div>
+        </div>        
         <hr />
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <Link to="/homepage">Home</Link>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>Staff list</BreadcrumbItem>
-        </Breadcrumb>
         <div className="row bg-info p-4 rounded-3">{menu}</div>
         <div className="row">
           <div className="col-12 m-1">
