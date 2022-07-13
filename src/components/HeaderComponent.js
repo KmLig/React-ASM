@@ -15,7 +15,7 @@ import {
   Label,
   Input,
 } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -60,18 +60,21 @@ class Header extends Component {
             <i className="fa fa-database" aria-hidden="true"></i> HRM App
           </div>
         </NavbarBrand>
-        <Form class="d-flex" role="search">   
-          <Input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-        </Form>
+        
         <NavbarToggler className="bg-warning" onClick={this.toggleNav}>
           <i class="fa fa-bars" aria-hidden="true"></i>
         </NavbarToggler>
+        <Form className="d-flex nav-item" role="search">
+          <Input class="form-control" type="search" placeholder="Nhập tên nhân viên" aria-label="Search" />
+          <Button class="btn btn-outline-success" type="submit">Search</Button>
+        </Form>
         <Collapse
           className="navbar-collapse justify-content-end"
           isOpen={this.state.isNavOpen}
           navbar
         >
-          <Nav navbar>
+          
+          <Nav navbar>          
             <NavItem>
               <NavLink
                 className="nav-item btn btn-outline-warning rounded-pill me-2 mt-2"
