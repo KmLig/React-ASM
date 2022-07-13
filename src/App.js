@@ -1,9 +1,15 @@
 import './App.css';
 import React, { Component } from 'react';
+import Home from './components/HomeComponent';
 import StaffList from './components/StaffListComponent';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import Department from './components/DepartmentComponent';
+import Header from './components/HeaderComponent';
+import Footer from './components/FooterComponent';
 import './App.css';
-import { STAFFS } from './shared/staff';
+import { STAFFS, DEPARTMENTS, ROLE} from './shared/staff';
+import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import StaffDetail from './components/StaffDetailComponent';
+import Salary from './components/SalaryComponent';
 
 class App extends Component {  
     
@@ -11,20 +17,38 @@ class App extends Component {
     super(props);
 
     this.state = {
-      staffs: STAFFS
+      staffs: STAFFS,
+      departments: DEPARTMENTS
     };
   }
+
+  
   render() {
+    const StaffWithId = ({match}) => {      
+      return(
+          <StaffDetail staff={this.state.staffs.filter((staff) => staff.id === parseInt(match.params.staffId,10))[0]} />
+      );
+    };
+    
+
     
     return (
-      <div>
-        <Navbar dark className="bg-dark p-4">
-          <div className='container'>
-            <NavbarBrand href='/'>Ứng dụng quản lý nhân sự version 1.0</NavbarBrand>
-          </div>
-        </Navbar>
-        <StaffList staffs={this.state.staffs} />
-      </div>
+      <BrowserRouter>      
+        <div>
+          <Header />
+          <Switch>
+              <Route path='/homepage' component={Home} />
+              <Route exact path='/employee' component={() => <StaffList staffs={this.state.staffs} />} />
+              <Route path='/employee/:staffId' component={StaffWithId} />
+              <Route path='/department' component={() => <Department departments={this.state.departments} />} />
+              <Route path='/salary' component={() => <Salary staffs={this.state.staffs} />} />
+              <Redirect to='/homepage' />
+              {/* <Route path="*" element={<Navigate replace to="/homepage" />} /> */}
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter>
+
     );
   }  
 }

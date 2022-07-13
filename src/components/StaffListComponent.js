@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import dateFormat from "dateformat";
 import {
   Card,
@@ -7,7 +7,10 @@ import {
   CardText,
   CardBody,
   CardTitle,
+  Breadcrumb,
+  BreadcrumbItem,
 } from "reactstrap";
+import { Link } from 'react-router-dom';
 
 class StaffList extends Component {
   constructor(props) {
@@ -15,20 +18,18 @@ class StaffList extends Component {
 
     this.state = {
       selectedStaff: null,
-      selectedCol: "col-6 mt-1",
+      selectedCol: "col-2 mt-3",
     };
     this.onColSelect = this.onColSelect.bind(this);
   }
 
-  onStaffSelect(dish) {
-    this.setState({ selectedStaff: dish });
+  onStaffSelect(staff) {
+    this.setState({ selectedStaff: staff });
   }
   onColSelect(event) {
-    this.setState({selectedCol: event.target.value });
+    this.setState({ selectedCol: event.target.value });
   }
 
-
- 
   renderStaff(staff) {
     if (staff != null)
       return (
@@ -64,9 +65,12 @@ class StaffList extends Component {
       return (
         <div className={this.state.selectedCol}>
           <Card key={staff.id} onClick={() => this.onStaffSelect(staff)}>
+          <Link to={`/employee/${staff.id}`}>
             <CardBody>
-              <CardTitle>{staff.name}</CardTitle>
+              <CardImg className="" src={staff.image} alt={staff.name} />
+              <CardTitle className="text-center"><i class="fa fa-user-circle" aria-hidden="true"></i> {staff.name}</CardTitle>
             </CardBody>
+            </Link>
           </Card>
         </div>
       );
@@ -74,19 +78,32 @@ class StaffList extends Component {
 
     return (
       <div className="container p-2 rounded-3 mt-2">
-        <div className="row bg-warning p-4 rounded-3">
-          <div className="col-4">
-          <h4>Chọn giao diện phù hợp:</h4>
-          </div>
-          <div className="col-8">
-          <select class="form-control" value={this.state.value} onChange={this.onColSelect}>
-            <option value="col-6 mt-1">2 cột</option>
-            <option value="col-4 mt-2">3 cột</option>
-            <option value="col-3 mt-3">4 cột</option>
-          </select>
-          </div>          
+        <div className="row bg-warning p-4 rounded-3">          
+            <div className="col-7 text-center">
+              <h4>
+                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện
+                phù hợp với màn hình của bạn:
+              </h4>
+            </div>
+            <div className="col-5">
+              <select
+                class="form-control"
+                value={this.state.value}
+                onChange={this.onColSelect}
+              >
+                <option value="col-2 mt-3">6 cột</option>
+                <option value="col-3 mt-3">4 cột</option>
+                <option value="col-4 mt-2">3 cột</option>
+              </select>
+            </div>        
         </div>
-        <hr/>
+        <hr />
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <Link to="/homepage">Home</Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem active>Staff list</BreadcrumbItem>
+        </Breadcrumb>
         <div className="row bg-info p-4 rounded-3">{menu}</div>
         <div className="row">
           <div className="col-12 m-1">
