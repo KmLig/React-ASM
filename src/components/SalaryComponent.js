@@ -10,6 +10,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   CardFooter,
+  CardHeader,
 } from "reactstrap";
 import { Link } from 'react-router-dom';
 
@@ -21,15 +22,17 @@ const RenderSalary = ({ staff }) => {
     let luong = 30000 * parseFloat(staff.salaryScale) + 20000* parseFloat(staff.overTime);
     if (staff != null)
       return (
-        <Card className="mt-2">
-          <CardBody>
-            <CardTitle>
-              <h4>Nhân viên: {staff.name}</h4>
-            </CardTitle>
-            <CardText>Mã nhân viên: {staff.id}</CardText>
-            <CardText>Hệ số lương: {staff.salaryScale}</CardText>
-            <CardText>Số ngày làm thêm: {staff.overTime}</CardText>
-            <CardFooter>Lương: {luong}</CardFooter>
+        <Card className="mt-2 bg-light">
+            <CardHeader>
+                <CardTitle>
+                <h4>Nhân viên: {staff.name}</h4>
+                </CardTitle>
+            </CardHeader>
+            <CardBody>                        
+                <CardText>Mã nhân viên: {staff.id}</CardText>
+                <CardText>Hệ số lương: {staff.salaryScale}</CardText>
+                <CardText>Số ngày làm thêm: {staff.overTime}</CardText>
+                <CardFooter>Lương: {luong}</CardFooter>
           </CardBody>
         </Card>
       );

@@ -15,7 +15,7 @@ const RenderDepartment = ({ department }) => {
   console.log(department.name);
   if (department != null)
     return (
-      <Card className="mt-2">
+      <Card className="mt-2 bg-light ">
         <CardBody>
           <CardTitle>
             <h4>Phòng ban: {department.name}</h4>
@@ -30,7 +30,7 @@ const Department = (props) => {
   const department = props.departments.map((department) => {
     return (
       <div className="col-md-4" key={department.id}>
-        <div className="bg-dark text-info rounded-3">
+        <div className="text-primary rounded-3">
           <RenderDepartment department={department} />
         </div>
       </div>
