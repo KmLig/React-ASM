@@ -25,13 +25,13 @@ function Footer(props) {
           <div className="col-4 col-lg-4 text-warning">
             <h5>Our Address</h5>
             <address>
-              1 TTP District 2
+              1 TTP District 2,
               <br />
-              Thu Duc City
+              Thu Duc City,
               <br />
               HCMC
               <br />
-              <i className="fa fa-phone fa-lg"></i>: +123456789
+              <i className="fa fa-phone fa-lg mt-3"></i>: +123456789
               <br />
               <i className="fa fa-fax fa-lg"></i>: +123456789
               <br />
@@ -39,8 +39,9 @@ function Footer(props) {
               <a href="mailto:confusion@food.net">asm@.net</a>
             </address>
           </div>
-          <div className="col-4 col-sm-4 align-self-center ">
-            <div className="text-center">
+          <div className="col-4 col-sm-4">
+            <h5 className="col-12 text-center text-warning">Contact us</h5>
+            <div className="col-12 text-center align-self-center">
               <a
                 className="btn btn-social-icon btn-google m-1"
                 href="http://google.com/+"
@@ -70,10 +71,7 @@ function Footer(props) {
                 href="http://youtube.com/"
               >
                 <i className="fa fa-youtube"></i>
-              </a>
-              <a className="btn btn-social-icon m-1" href="mailto:">
-                <i className="fa fa-envelope-o"></i>
-              </a>
+              </a>              
             </div>
           </div>
         </div>
