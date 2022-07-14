@@ -1,13 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import dateFormat from "dateformat";
-import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from "reactstrap";
-import { Link } from 'react-router-dom';
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Breadcrumb,
+  BreadcrumbItem,
+} from "reactstrap";
+import { Link } from "react-router-dom";
 
+class SearchStaff extends Component {
+  constructor(props) {
+    super(props);
 
-function RenderSearchedStaff({ staff }) {
+    this.state = {
+      search: "",
+    };
+  }
+
+  onChange = e => {
+    this.setState({ search: e.target.value });
+  }
+
+  RenderSearchedStaff({ staff }) {    
     if (staff != null)
       return (
-        <Card key={staff.id} className="mt-2">
+        <Card className="mt-2">
           <div className="row">
             <div className="col-9 bg-dark text-warning rounded-3">
               <CardBody>
@@ -31,25 +51,71 @@ function RenderSearchedStaff({ staff }) {
           </div>
         </Card>
       );
-    else return <div></div>;
+    else return <div>Không tìm thấy kết quả phù hợp</div>;
   }
-  const SearchStaff = (props) => {
-    if (props.staff != null) {
+
+  render() {
+    const { search } = this.state;
+    const filteredStaff = this.props.staffs.filter(country => {
+      return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+    });
+    const menu = this.props.staffs.map((staff) => {
       return (
-        <div className="container">
-          <div className="row">
-              <hr className="mt-3"/>
-              <Breadcrumb>      
-                  <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>      
-                  <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
-                  <BreadcrumbItem active>{props.staff.name}</BreadcrumbItem>
-              </Breadcrumb>
-              <RenderSearchedStaff staff={props.staff} />
-          </div>
+        <div className={this.state.selectedCol}>
+          <Card key={staff.id} onClick={() => this.onStaffSelect(staff)}>
+            <Link to={`/employee/${staff.id}`}>
+              <CardBody>
+                <CardImg className="" src={staff.image} alt={staff.name} />
+                <CardTitle className="text-center">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+                  {staff.name}
+                </CardTitle>
+              </CardBody>
+            </Link>
+          </Card>
         </div>
       );
-    }
-  };
+    });
+
+    return (
+      <div className="container p-2 rounded-3 mt-2">
+        <hr />
+        <Breadcrumb>
+          <BreadcrumbItem>
+            <Link to="/homepage">Home</Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem active>Staff list</BreadcrumbItem>
+        </Breadcrumb>
+        <div className="row bg-warning p-4 rounded-3">
+          <div className="col-7 text-center">
+            <h4>
+              <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện phù
+              hợp với màn hình của bạn:
+            </h4>
+          </div>
+          <div className="col-5">
+            <select
+              class="form-control"
+              value={this.state.value}
+              onChange={this.onColSelect}
+            >
+              <option value="col-2 mt-3">6 cột</option>
+              <option value="col-3 mt-3">4 cột</option>
+              <option value="col-4 mt-2">3 cột</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div className="row bg-info p-4 rounded-3">{menu}</div>
+        <div className="row">
+          <div className="col-12 m-1">
+            {filteredStaff.map((staff) => {return this.state.renderStaff(staff)})}
+            {this.renderStaff(this.state.selectedStaff)}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default SearchStaff;
-  

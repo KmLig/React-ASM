@@ -7,6 +7,7 @@ import {
   CardTitle,
   Breadcrumb,
   BreadcrumbItem,
+  CardHeader,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -16,10 +17,12 @@ const RenderDepartment = ({ department }) => {
   if (department != null)
     return (
       <Card className="mt-2 bg-light ">
-        <CardBody>
-          <CardTitle>
-            <h4>Phòng ban: {department.name}</h4>
-          </CardTitle>
+        <CardHeader>
+            <CardTitle>
+                <h4>Phòng ban: {department.name}</h4>
+            </CardTitle>
+        </CardHeader>
+        <CardBody>          
           <CardText>Nhân viên: {department.numberOfStaff}</CardText>
         </CardBody>
       </Card>
