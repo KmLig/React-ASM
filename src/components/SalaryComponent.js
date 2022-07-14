@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, useState } from "react";
+import { Button } from "reactstrap";
 import dateFormat from "dateformat";
 import {
   Card,
@@ -12,54 +13,89 @@ import {
   CardFooter,
   CardHeader,
 } from "reactstrap";
-import { Link } from 'react-router-dom';
-
-
-
-const RenderSalary = ({ staff }) => {
-    console.log(staff);
-    console.log(staff.name);
-    let luong = 30000 * parseFloat(staff.salaryScale) + 20000* parseFloat(staff.overTime);
-    if (staff != null)
-      return (
-        <Card className="mt-2 bg-light">
-            <CardHeader>
+import { Link } from "react-router-dom";
+ 
+class Salary extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            staffList: this.props.staffs
+        }
+        this.salaryCalc = this.salaryCalc.bind(this);
+        this.sortSalary = this.sortSalary.bind(this);
+    }
+    salaryCalc(salaryScale, overTime) {
+        const basicSalary = 3000000;
+        const overTimeSalary = 200000;
+        return parseInt(salaryScale * basicSalary + overTime * overTimeSalary);
+        }
+    sortSalary(sorttype) {        
+        let sortedStaffList = this.state.staffList;        
+        let vm = this;
+        if (sorttype === "increase") {
+            sortedStaffList.sort(function (a, b) {            
+            return vm.salaryCalc(a.salaryScale, a.overTime) - vm.salaryCalc(b.salaryScale, b.overTime);
+        });
+    }
+    
+    if (sorttype === "decrease") {
+        sortedStaffList.sort(function (a, b) {            
+            return vm.salaryCalc(b.salaryScale, b.overTime) - vm.salaryCalc(a.salaryScale, a.overTime);
+            });
+        }
+        this.setState({ staffList: sortedStaffList });
+        console.log(this.state.staffList);
+    }
+    RenderSalary = (staff) => {
+        let luong = this.salaryCalc(staff.salaryScale, staff.overTime);
+        if (staff != null)
+          return (
+            <Card className="mt-2 bg-light">
+              <CardHeader>
                 <CardTitle>
-                <h4>Nhân viên: {staff.name}</h4>
+                  <h4>Nhân viên: {staff.name}</h4>
                 </CardTitle>
-            </CardHeader>
-            <CardBody>                        
+              </CardHeader>
+              <CardBody>
                 <CardText>Mã nhân viên: {staff.id}</CardText>
                 <CardText>Hệ số lương: {staff.salaryScale}</CardText>
                 <CardText>Số ngày làm thêm: {staff.overTime}</CardText>
                 <CardFooter>Lương: {luong}</CardFooter>
-          </CardBody>
-        </Card>
-      );
-    else return <div></div>;
-  };
-  const Salary = (props) => {
-    const salary = props.staffs.map((staff) => {
-      return (
-        <div className="col-md-4" key={staff.id}>
-          <div className="bg-dark text-black rounded-3">
-            <RenderSalary staff={staff} />
+              </CardBody>
+            </Card>
+          );
+        else return <div></div>;
+      };   
+    render() {
+    const salary = this.state.staffList.map((staff) => {
+        return (
+          <div className="col-md-4" key={staff.id}>
+            <div className="bg-dark text-black rounded-3">
+              {this.RenderSalary(staff)}
+            </div>
           </div>
+        );
+      });
+      return (
+        <div className="container">
+          <hr className="mt-3" />
+          <Breadcrumb>
+            <BreadcrumbItem>
+              <Link to="/homepage">Home</Link>
+            </BreadcrumbItem>
+            <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
+          </Breadcrumb>
+          <Button onClick={() => this.sortSalary("increase")}>
+            <span class="fa fa-sort-amount-asc"></span> Lương Thấp
+          </Button>
+    
+          <Button onClick={() => this.sortSalary("decrease")}>
+            <span class="fa fa-sort-amount-desc"></span> Lương Cao
+          </Button>
+          <div className="row">{salary}</div>
         </div>
       );
-    });
-    return (
-      <div className="container">
-          <hr className="mt-3"/>
-              <Breadcrumb>      
-                  <BreadcrumbItem><Link to='/homepage'>Home</Link></BreadcrumbItem>      
-                  <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
-              </Breadcrumb>
-          <div className="row">        
-              {salary}
-          </div>
-      </div>
-    )
-  };
-  
-  export default Salary;
+    }   
+};
+
+export default Salary;

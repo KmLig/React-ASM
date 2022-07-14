@@ -172,7 +172,7 @@ export const STAFFS =
             startDate: "2019-04-30T08:59:00.000Z",
             department: DEPARTMENTS[4],
             annualLeave: 9,
-            overTime: 10,
+            overTime: 12,
             image: '/assets/images/alberto.jpg',
         },
         {
@@ -205,7 +205,7 @@ export const STAFFS =
             startDate: "2019-04-30T08:59:00.000Z",
             department: DEPARTMENTS[4],
             annualLeave: 9,
-            overTime: 10,
+            overTime: 11,
             image: '/assets/images/alberto.jpg',
         },
 

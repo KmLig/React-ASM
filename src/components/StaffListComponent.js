@@ -12,6 +12,7 @@ import {
   Input,
   Form,
   Button,
+  Label,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -34,8 +35,8 @@ class StaffList extends Component {
   onColSelect(event) {
     this.setState({ selectedCol: event.target.value });
   }
-  onSearchChange(e) {
-    this.setState({ search: e.target.value });
+  onSearchChange(event) {
+    this.setState({ search: event.target.value });
   }
 
   renderStaffList(a) {
@@ -62,8 +63,10 @@ class StaffList extends Component {
   }
 
   render() {
-    const { search } = this.state;
+    //object destructuring
+    const { search }  = this.state; 
     const filteredStaff = this.props.staffs.filter((staff) => {
+      //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
     });
     console.log(filteredStaff);
@@ -100,12 +103,9 @@ class StaffList extends Component {
                 onChange={this.onSearchChange}
                 className="form-control"
                 type="search"
-                placeholder="Nhập tên nhân viên"
+                placeholder=" Nhập tên nhân viên... 🔍 "
                 aria-label="Search"
-              />
-              <Button className="btn btn-success" type="submit">
-                Search
-              </Button>
+              />              
             </Form>
           </div>
           <div className="col-12 col-md-6 pull-left">
