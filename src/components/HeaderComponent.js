@@ -57,7 +57,7 @@ class Header extends Component {
       <Navbar className="bg-dark p-4 text-warning navbar-collapse navbar-expand-md">
         <NavbarBrand href="/" className="me-5">
           <div className="btn btn-outline-warning">
-            <i className="fa fa-database" aria-hidden="true"></i> HRM App
+            <i className="fa fa-database" aria-hidden="true"></i> HRM
           </div>
         </NavbarBrand>   
         <Form className="d-flex me-5" role="search">

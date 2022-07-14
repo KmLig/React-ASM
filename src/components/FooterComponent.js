@@ -22,7 +22,7 @@ function Footer(props) {
               </li>
             </ul>
           </div>
-          <div className="col-4 col-lg-4">
+          <div className="col-4 col-lg-4 text-warning">
             <h5>Our Address</h5>
             <address>
               1 TTP District 2
@@ -39,7 +39,7 @@ function Footer(props) {
               <a href="mailto:confusion@food.net">asm@.net</a>
             </address>
           </div>
-          <div className="col-4 col-sm-4 align-self-center">
+          <div className="col-4 col-sm-4 align-self-center ">
             <div className="text-center">
               <a
                 className="btn btn-social-icon btn-google m-1"
