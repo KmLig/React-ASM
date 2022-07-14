@@ -20,24 +20,16 @@ class App extends Component {
     this.state = {
       staffs: STAFFS,
       departments: DEPARTMENTS,
-      search: ""
     };
   }
-
-  onSearchChange = e => {
-    this.setState({ search: e.target.value });
-  }
-
   
   render() {
     const StaffWithId = ({match}) => {      
       return(
           <StaffDetail staff={this.state.staffs.filter((staff) => staff.id === parseInt(match.params.staffId,10))[0]} />
       );
-    };
-    
-
-    
+    };  
+ 
     return (
       <BrowserRouter>      
         <div>

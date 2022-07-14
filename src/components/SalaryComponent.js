@@ -52,8 +52,8 @@ const RenderSalary = ({ staff }) => {
       <div className="container">
           <hr className="mt-3"/>
               <Breadcrumb>      
-                  <BreadcrumbItem><Link to='/employee'>Nhân viên</Link></BreadcrumbItem>      
-                  <BreadcrumbItem active>Bảng lương</BreadcrumbItem>
+                  <BreadcrumbItem><Link to='/homepage'>Home</Link></BreadcrumbItem>      
+                  <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
               </Breadcrumb>
           <div className="row">        
               {salary}

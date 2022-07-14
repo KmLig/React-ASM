@@ -56,8 +56,8 @@ class SearchStaff extends Component {
 
   render() {
     const { search } = this.state;
-    const filteredStaff = this.props.staffs.filter(country => {
-      return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+    const filteredStaff = this.props.staffs.filter(staff => {
+      return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
     });
     const menu = this.props.staffs.map((staff) => {
       return (
