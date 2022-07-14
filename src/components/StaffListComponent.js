@@ -9,6 +9,9 @@ import {
   CardTitle,
   Breadcrumb,
   BreadcrumbItem,
+  Input,
+  Form,
+  Button
 } from "reactstrap";
 import { Link } from 'react-router-dom';
 
@@ -85,24 +88,35 @@ class StaffList extends Component {
           </BreadcrumbItem>
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
-        <div className="row bg-warning p-4 rounded-3">          
-            <div className="col-7 text-center">
-              <h4>
-                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện
-                phù hợp với màn hình của bạn:
-              </h4>
+        <div className="row bg-warning p-4 rounded-3">  
+        <div className="col-12 col-md-6">
+            <Form className="d-flex me-5" role="search">
+          <Input className="form-control" type="search" placeholder="Nhập tên nhân viên" aria-label="Search" />
+          <Button className="btn btn-success" type="submit">Search</Button>
+        </Form>
+        </div>        
+            <div className="col-12 col-md-6 pull-left">
+             <div className="row">
+             <div className="col-6">
+                <h4>
+                  <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện:              
+                </h4>
+              </div>
+              <div className="col-6">
+                <select
+                  class="form-control"
+                  value={this.state.value}
+                  onChange={this.onColSelect}
+                >
+                  <option value="col-2 mt-3">6 cột</option>
+                  <option value="col-3 mt-3">4 cột</option>
+                  <option value="col-4 mt-2">3 cột</option>
+                </select>
+              </div> 
+             </div>
             </div>
-            <div className="col-5">
-              <select
-                class="form-control"
-                value={this.state.value}
-                onChange={this.onColSelect}
-              >
-                <option value="col-2 mt-3">6 cột</option>
-                <option value="col-3 mt-3">4 cột</option>
-                <option value="col-4 mt-2">3 cột</option>
-              </select>
-            </div>        
+
+                   
         </div>        
         <hr />
         <div className="row bg-info p-4 rounded-3">{menu}</div>

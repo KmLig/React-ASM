@@ -10,6 +10,7 @@ import { STAFFS, DEPARTMENTS, ROLE} from './shared/staff';
 import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import StaffDetail from './components/StaffDetailComponent';
 import Salary from './components/SalaryComponent';
+import SearchStaff from './components/SearchStaffComponent';
 
 class App extends Component {  
     
@@ -18,8 +19,13 @@ class App extends Component {
 
     this.state = {
       staffs: STAFFS,
-      departments: DEPARTMENTS
+      departments: DEPARTMENTS,
+      search: ""
     };
+  }
+
+  onSearchChange = e => {
+    this.setState({ search: e.target.value });
   }
 
   
@@ -40,6 +46,7 @@ class App extends Component {
               <Route path='/homepage' component={Home} />
               <Route exact path='/employee' component={() => <StaffList staffs={this.state.staffs} />} />
               <Route path='/employee/:staffId' component={StaffWithId} />
+              <Route path='/searchstaff' component={() => <SearchStaff staff={this.state.staffs} />} />
               <Route path='/department' component={() => <Department departments={this.state.departments} />} />
               <Route path='/salary' component={() => <Salary staffs={this.state.staffs} />} />
               <Redirect to='/homepage' />

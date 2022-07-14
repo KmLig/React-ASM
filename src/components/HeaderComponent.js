@@ -59,11 +59,7 @@ class Header extends Component {
           <div className="btn btn-outline-warning">
             <i className="fa fa-database" aria-hidden="true"></i> HRM
           </div>
-        </NavbarBrand>   
-        <Form className="d-flex me-5" role="search">
-          <Input className="form-control" type="search" placeholder="Nhập tên nhân viên" aria-label="Search" />
-          <Button className="btn btn-success" type="submit">Search</Button>
-        </Form>      
+        </NavbarBrand>                 
         <NavbarToggler className="bg-warning" onClick={this.toggleNav}>
           <i class="fa fa-bars" aria-hidden="true"></i>
         </NavbarToggler>

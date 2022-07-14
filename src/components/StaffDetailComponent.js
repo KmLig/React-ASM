@@ -40,7 +40,7 @@ const StaffDetail = (props) => {
             <hr className="mt-3"/>
             <Breadcrumb>      
                 <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>      
-                <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                <BreadcrumbItem><Link to="/employee">Staff list</Link></BreadcrumbItem>
                 <BreadcrumbItem active>{props.staff.name}</BreadcrumbItem>
             </Breadcrumb>
             <RenderStaff staff={props.staff} />
