@@ -77,7 +77,7 @@ function Footer(props) {
         </div>
         <div className="row justify-content-center">
           <div className="col-auto">
-            <p>© Copyright KP Lorem </p>
+            <p className="text-warning">© Copyright KP Lorem </p>
           </div>
         </div>
       </div>
