@@ -64,7 +64,7 @@ class StaffList extends Component {
 
   render() {
     //object destructuring
-    const { search }  = this.state; 
+    const { search } = this.state;
     const filteredStaff = this.props.staffs.filter((staff) => {
       //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
@@ -105,7 +105,7 @@ class StaffList extends Component {
                 type="search"
                 placeholder=" Nhập tên nhân viên... 🔍 "
                 aria-label="Search"
-              />              
+              />
             </Form>
           </div>
           <div className="col-12 col-md-6 pull-left">
