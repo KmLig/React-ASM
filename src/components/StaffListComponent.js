@@ -63,7 +63,7 @@ class StaffList extends Component {
   }
 
   render() {
-    //object destructuring
+    // object destructuring
     const { search } = this.state;
     const filteredStaff = this.props.staffs.filter((staff) => {
       //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
