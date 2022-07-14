@@ -19,10 +19,11 @@ class Salary extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            staffList: this.props.staffs
+            staffList: props.staffs
         }
         this.salaryCalc = this.salaryCalc.bind(this);
         this.sortSalary = this.sortSalary.bind(this);
+        this.resetSalarySort = this.resetSalarySort.bind(this);
     }
     salaryCalc(salaryScale, overTime) {
         const basicSalary = 3000000;
@@ -46,6 +47,12 @@ class Salary extends Component{
         this.setState({ staffList: sortedStaffList });
         console.log(this.state.staffList);
     }
+    resetSalarySort() {
+        //let vm = this;
+        this.setState({staffList: this.props.staffs});
+        console.log("props")
+        console.log(this.props.staffs);
+    }
     RenderSalary = (staff) => {
         let luong = this.salaryCalc(staff.salaryScale, staff.overTime);
         if (staff != null)
@@ -60,7 +67,7 @@ class Salary extends Component{
                 <CardText>Mã nhân viên: {staff.id}</CardText>
                 <CardText>Hệ số lương: {staff.salaryScale}</CardText>
                 <CardText>Số ngày làm thêm: {staff.overTime}</CardText>
-                <CardFooter>Lương: {luong}</CardFooter>
+                <CardFooter><b>Lương: {luong}</b></CardFooter>
               </CardBody>
             </Card>
           );
@@ -85,13 +92,16 @@ class Salary extends Component{
             </BreadcrumbItem>
             <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
           </Breadcrumb>
-          <Button onClick={() => this.sortSalary("increase")}>
+          <Button className="btn btn-success" onClick={() => this.sortSalary("increase")}>
             <span class="fa fa-sort-amount-asc"></span> Lương Thấp
-          </Button>
-    
-          <Button onClick={() => this.sortSalary("decrease")}>
+          </Button>    
+          <Button className="btn btn-success ms-4" onClick={() => this.sortSalary("decrease")}>
             <span class="fa fa-sort-amount-desc"></span> Lương Cao
           </Button>
+          <Button className="btn btn-success ms-4" onClick={this.resetSalarySort}>
+            <span class="fa fa-sort-amount-desc"></span> Reset
+          </Button>
+          <hr />
           <div className="row">{salary}</div>
         </div>
       );
