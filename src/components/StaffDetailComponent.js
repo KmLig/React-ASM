@@ -8,7 +8,10 @@ function RenderStaff({ staff }) {
     return (
       <Card key={staff.id} className="mt-2">
         <div className="row">
-          <div className="col-9 bg-dark text-warning rounded-3">
+        <div className="col-12 col-md-4 col-lg-3">
+            <CardImg className="img-fluid" src={staff.image} alt={staff.name} />
+          </div>
+          <div className="col-12 col-md-8 col-lg-9 bg-dark text-warning rounded-3">
             <CardBody>
               <CardTitle>
                 <h4>Họ và tên: {staff.name}</h4>
@@ -23,10 +26,7 @@ function RenderStaff({ staff }) {
               <CardText>Số ngày nghỉ còn lại: {staff.annualLeave}</CardText>
               <CardText>Số ngày đã làm thêm: {staff.overTime}</CardText>
             </CardBody>
-          </div>
-          <div className="col-3">
-            <CardImg className="" src={staff.image} alt={staff.name} />
-          </div>
+          </div>          
         </div>
       </Card>
     );

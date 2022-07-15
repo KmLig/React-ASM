@@ -1,10 +1,7 @@
-import React, { Component, Fragment, useState } from "react";
+import React, { Component } from "react";
 import { Button } from "reactstrap";
-import dateFormat from "dateformat";
 import {
   Card,
-  CardImg,
-  CardImgOverlay,
   CardText,
   CardBody,
   CardTitle,
@@ -30,10 +27,10 @@ class Salary extends Component {
     const overTimeSalary = 200000;
     return parseInt(salaryScale * basicSalary + overTime * overTimeSalary);
   }
-  sortSalary(sorttype) {
+  sortSalary(sortType) {
     let sortedStaffList = [...this.state.staffList];
     let vm = this;
-    if (sorttype === "increase") {
+    if (sortType === "increase") {
       sortedStaffList.sort(function (a, b) {
         return (
           vm.salaryCalc(a.salaryScale, a.overTime) -
@@ -42,7 +39,7 @@ class Salary extends Component {
       });
     }
 
-    if (sorttype === "decrease") {
+    if (sortType === "decrease") {
       sortedStaffList.sort(function (a, b) {
         return (
           vm.salaryCalc(b.salaryScale, b.overTime) -
@@ -62,7 +59,7 @@ class Salary extends Component {
     let luong = this.salaryCalc(staff.salaryScale, staff.overTime);
     if (staff != null)
       return (
-        <Card className="mt-2 bg-light">
+        <Card className="mt-3 bg-light">
           <CardHeader>
             <CardTitle>
               <h4>Nhân viên: {staff.name}</h4>
@@ -83,7 +80,7 @@ class Salary extends Component {
   render() {
     const salary = this.state.staffList.map((staff) => {
       return (
-        <div className="col-md-4" key={staff.id}>
+        <div className="col-12 col-md-6 col-lg-4" key={staff.id}>
           <div className="bg-dark text-black rounded-3">
             {this.RenderSalary(staff)}
           </div>

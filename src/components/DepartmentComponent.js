@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Card,
-  CardImg,
   CardText,
   CardBody,
   CardTitle,
@@ -32,7 +31,7 @@ const RenderDepartment = ({ department }) => {
 const Department = (props) => {
   const department = props.departments.map((department) => {
     return (
-      <div className="col-md-4" key={department.id}>
+      <div className="col-12 col-md-6 col-lg-4" key={department.id}>
         <div className="text-primary rounded-3">
           <RenderDepartment department={department} />
         </div>

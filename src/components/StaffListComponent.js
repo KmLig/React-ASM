@@ -22,7 +22,7 @@ class StaffList extends Component {
 
     this.state = {
       selectedStaff: null,
-      selectedCol: "col-2 mt-3",
+      selectedCol: "col-6 col-md-4 col-lg-2 mt-3",
       search: "",
     };
     this.onColSelect = this.onColSelect.bind(this);
@@ -96,9 +96,9 @@ class StaffList extends Component {
           </BreadcrumbItem>
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
-        <div className="row bg-warning p-4 rounded-3">
-          <div className="col-12 col-md-6">
-            <Form className="d-flex me-5" role="search">
+        <div className="row rounded-3">          
+          <div className="col-12 p-4 col-md-6 bg-success rounded-3">
+            <Form className="d-flex" role="search">
               <Input
                 onChange={this.onSearchChange}
                 className="form-control"
@@ -108,25 +108,17 @@ class StaffList extends Component {
               />
             </Form>
           </div>
-          <div className="col-12 col-md-6 pull-left">
-            <div className="row">
-              <div className="col-6">
-                <h4>
-                  <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện:
-                </h4>
-              </div>
-              <div className="col-6">
+          <div className="col-12 p-4 offset-md-1 col-md-5 bg-warning rounded-3 pull-left">
+            
                 <select
                   class="form-control"
                   value={this.state.value}
                   onChange={this.onColSelect}
                 >
-                  <option value="col-2 mt-3">6 cột</option>
-                  <option value="col-3 mt-3">4 cột</option>
-                  <option value="col-4 mt-2">3 cột</option>
+                  <option value="col-2 mt-3"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 6 cột</option>
+                  <option value="col-3 mt-3"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 4 cột</option>
+                  <option value="col-4 mt-2"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 3 cột</option>
                 </select>
-              </div>
-            </div>
           </div>
         </div>
         <hr />
