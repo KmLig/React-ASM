@@ -6,7 +6,7 @@ class Home extends Component {
 
     this.state = {};
   }
-  render() {
+  render() {    
     return (
       <div className="container">
         <div className="row">

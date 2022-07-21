@@ -42,7 +42,6 @@ class App extends Component {
               <Route path='/department' component={() => <Department departments={this.state.departments} />} />
               <Route path='/salary' component={() => <Salary staffs={this.state.staffs} />} />
               <Redirect to='/homepage' />
-              {/* <Route path="*" element={<Navigate replace to="/homepage" />} /> */}
           </Switch>
           <Footer />
         </div>

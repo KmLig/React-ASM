@@ -8,7 +8,7 @@ function RenderStaff({ staff }) {
     return (
       <Card key={staff.id} className="mt-2">
         <div className="row">
-        <div className="col-12 col-md-4 col-lg-3">
+        <div className="col-12 col-md-4 col-lg-3 p-0">
             <CardImg className="img-fluid" src={staff.image} alt={staff.name} />
           </div>
           <div className="col-12 col-md-8 col-lg-9 bg-dark text-warning rounded-3">
