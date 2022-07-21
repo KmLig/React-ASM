@@ -73,8 +73,8 @@ class StaffList extends Component {
     return (
       <div className="container p-2 rounded-3 mt-2">
         <div className="row bg-warning p-4 rounded-3">
-          <div className="col-4">
-          <h4>Chọn giao diện phù hợp:</h4>
+          <div className="col-4 d-none d-lg-block">
+          <h4 className="">Chọn giao diện:</h4>
           </div>
           <div className="col-8">
           <select class="form-control" value={this.state.value} onChange={this.onColSelect}>
