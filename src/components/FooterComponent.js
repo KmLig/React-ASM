@@ -13,10 +13,7 @@ function Footer(props) {
               </li>
               <li>
                 <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Menu</a>
-              </li>
+              </li>           
               <li>
                 <a href="contactus.html">Contact</a>
               </li>
