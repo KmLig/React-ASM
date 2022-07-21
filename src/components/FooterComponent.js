@@ -12,10 +12,10 @@ function Footer(props) {
                 <a className="btn btn-outline-warning rounded-pill m-1" href="/">Home</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a className="btn btn-outline-warning rounded-pill m-1" href="/">About</a>
               </li>           
               <li>
-                <a href="/">Contact</a>
+                <a className="btn btn-outline-warning rounded-pill m-1" href="/">Contact</a>
               </li>
             </ul>
           </div>
