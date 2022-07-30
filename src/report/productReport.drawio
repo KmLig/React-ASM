@@ -1,0 +1,481 @@
+<mxfile host="65bd71144e">
+    <diagram id="KZeUkL_VxJtTeQtRC2wV" name="Page-1">
+        <mxGraphModel dx="1262" dy="2683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry y="-1100" width="850" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#FFFF00;strokeColor=#FFFF00;fontSize=30;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-1070" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Home" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-960" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="-960" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Staff List" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="-960" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="-960" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Staff Details" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="-960" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Search" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#ffffff;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#005700;mainText=;fillColor=#008a00;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-920" width="385" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Change column" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;strokeColor=#d79b00;mainText=;fillColor=#ffcd28;gradientColor=#ffa500;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-920" width="380" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;labelBorderColor=#FFFF99;fontSize=30;strokeColor=#006EAF;strokeWidth=3;fillColor=#1ba1e2;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-840" width="790" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="-810" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="-730" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="-650" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Nhân viên" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="-570" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="-1080" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#000000;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#FFFF00;whiteSpace=wrap;labelBackgroundColor=#FFFF00;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="-1080" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="-1080" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="-1080" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="-1080" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="-440" width="850" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-420" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-390" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-360" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-330" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="Contact information" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="-430" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="Social links" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="-410" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=#1A1A1A;labelBorderColor=none;fontSize=13;fontColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="-300" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="222" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry y="-2100" width="850" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="223" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#FFFF00;strokeColor=#FFFF00;fontSize=30;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-2070" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="224" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-1960" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="256" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#000000;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#FFFF00;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="-2080" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="257" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="-2080" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="258" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="-2080" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="259" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="-2080" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="260" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="-2080" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="261" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="-1440" width="850" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="262" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-1420" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="263" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-1390" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="264" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-1360" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="265" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="-1330" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="266" value="Contact information" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="-1430" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="267" value="Social links" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="-1410" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="268" value="Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=#1A1A1A;labelBorderColor=none;fontSize=13;fontColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="-1300" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="269" value="&lt;font color=&quot;#000000&quot;&gt;Link YouTube&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#FFCCFF;labelBorderColor=none;fontSize=13;fontColor=#B266FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFCCFF;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-1910" width="810" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="408" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry y="-200" width="850" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="409" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#FFFF00;strokeColor=#FFFF00;fontSize=30;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="410" value="Home" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="411" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="-60" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="412" value="Staff List" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="-60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="413" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="-60" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="414" value="Staff Details" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="-60" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="442" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="-180" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="443" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#000000;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#FFFF00;whiteSpace=wrap;labelBackgroundColor=#FFFF00;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="-180" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="444" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="-180" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="445" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="-180" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="446" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="-180" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="447" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="460" width="850" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="448" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="480" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="449" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="510" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="450" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="540" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="451" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="570" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="452" value="Contact information" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="470" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="453" value="Social links" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="490" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="454" value="Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=#1A1A1A;labelBorderColor=none;fontSize=13;fontColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="600" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="456" value="Hình ảnh nhân viên" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=22;fontColor=#FFFF00;strokeColor=none;strokeWidth=3;fillColor=#1C1C82;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="240" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="457" value="&lt;font color=&quot;#ff9933&quot;&gt;Thông tin nhân viên&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=22;fontColor=#FFFF00;strokeColor=#000000;strokeWidth=3;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="40" width="550" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="458" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry y="720" width="850" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="459" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#FFFF00;strokeColor=#FFFF00;fontSize=30;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="750" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="460" value="Home" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="860" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="461" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="860" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="462" value="Department" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="860" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="492" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="740" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="493" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="740" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="494" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#000000;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#FFFF00;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="740" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="495" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="740" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="496" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="740" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="497" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="1380" width="850" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="498" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1400" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="499" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1430" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="500" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1460" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="501" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1490" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="502" value="Contact information" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="1390" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="503" value="Social links" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="1410" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="504" value="Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=#1A1A1A;labelBorderColor=none;fontSize=13;fontColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="1520" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="505" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="920" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="506" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="970" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="508" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="920" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="509" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="970" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="510" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="920" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="511" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="970" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="512" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1050" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="513" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1100" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="514" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="1050" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="515" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="1100" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="516" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="1050" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="517" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="1100" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="518" value="&amp;nbsp;Phòng ban: Tên phòng ban" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1180" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="519" value="&amp;nbsp;Nhân viên: SL" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=#FFFF00;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1230" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="520" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;fillColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry y="1620" width="850" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="521" value="Logo" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#FFFF00;strokeColor=#FFFF00;fontSize=30;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1650" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="522" value="Home" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1760" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="523" value="&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=24;fontColor=#aaaaaa;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="1760" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="525" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="1640" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="526" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="1640" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="527" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="1640" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="528" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#000000;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#FFFF00;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="1640" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="529" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="1640" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="530" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=#FFFF66;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="2280" width="850" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="531" value="Homepage" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2300" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="532" value="Staff" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2330" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="533" value="Deparment" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2360" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="534" value="Salary" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#FFFF00;fontColor=#FFFF00;mainText=;buttonStyle=round;fontSize=13;fontStyle=1;fillColor=#000000;whiteSpace=wrap;labelBackgroundColor=#000000;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="2390" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="535" value="Contact information" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="2290" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="536" value="Social links" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=#000000;labelBorderColor=none;fontSize=13;fontColor=#6666FF;strokeColor=#FFFF00;strokeWidth=3;fillColor=#1A1A1A;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="2310" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="537" value="Copyright" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;labelBackgroundColor=#1A1A1A;labelBorderColor=none;fontSize=13;fontColor=#FFFF00;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="2420" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="538" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1870" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="539" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1920" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="552" value="Salary Sheet" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.anchor;fontSize=17;fontColor=#6666FF;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="1760" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="553" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1990" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="554" value="Lương thấp" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#006600;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="1800" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="557" value="Lương cao" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#006600;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="207.5" y="1800" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="558" value="Reset" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#6F0000;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#CC0000;whiteSpace=wrap;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="1800" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="559" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1870" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="560" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1920" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="561" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1990" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="562" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="1870" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="563" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="1920" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="564" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="1990" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="574" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="2070" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="575" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="2120" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="576" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="2190" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="577" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="2070" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="578" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="2120" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="579" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="2190" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="580" value="&amp;nbsp;Nhân viên: Tên NV" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=17;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#B3B3B3;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="2070" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="581" value="&amp;nbsp;Mã nhân viên: ...&lt;br&gt;&amp;nbsp;Hệ số lương: ...&lt;br&gt;&amp;nbsp;Số ngày làm thêm: ..." style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="2120" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="582" value="Lương: 30 000" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=16;fontColor=#000000;strokeColor=none;strokeWidth=3;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="585" y="2190" width="220" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
