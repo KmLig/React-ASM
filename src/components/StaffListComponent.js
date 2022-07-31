@@ -19,7 +19,7 @@ import {
   ModalHeader
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import AddStaffModal from "./AddStaffModal";
+import AddStaffModal from "./AddStaffModalComponent";
 
 class StaffList extends Component {
   constructor(props) {
