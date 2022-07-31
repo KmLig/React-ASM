@@ -13,8 +13,13 @@ import {
   Form,
   Button,
   Label,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import AddStaffModal from "./AddStaffModal";
 
 class StaffList extends Component {
   constructor(props) {
@@ -96,12 +101,10 @@ class StaffList extends Component {
           </BreadcrumbItem>
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
-        <div className="row rounded-3">      
-          <div className="col-12 p-4 col-lg-2 bg-info rounded-3 mb-2">
-            <form>
-              <button className="btn btn-warning w-100" type="submit" value="fa Thêm nhân viên"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm </button>
-            </form>
-          </div>    
+        <div className="row rounded-3">
+          <div className="col-12 p-4 col-lg-2 border rounded-3 mb-2">            
+            <AddStaffModal />
+          </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
             <Form className="d-flex" role="search">
               <Input
@@ -114,16 +117,24 @@ class StaffList extends Component {
             </Form>
           </div>
           <div className="col-12 p-4 col-lg-3 offset-lg-1 d-none d-lg-block bg-warning rounded-3 mb-2">
-            
-                <select
-                  class="form-control"
-                  value={this.state.value}
-                  onChange={this.onColSelect}
-                >
-                  <option value="col-2 mt-3"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 6 cột</option>
-                  <option value="col-3 mt-3"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 4 cột</option>
-                  <option value="col-4 mt-2"><i class="fa fa-tasks" aria-hidden="true"></i>  Chọn giao diện: 3 cột</option>
-                </select>
+            <select
+              class="form-control"
+              value={this.state.value}
+              onChange={this.onColSelect}
+            >
+              <option value="col-2 mt-3">
+                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 6
+                cột
+              </option>
+              <option value="col-3 mt-3">
+                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 4
+                cột
+              </option>
+              <option value="col-4 mt-2">
+                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 3
+                cột
+              </option>
+            </select>
           </div>
         </div>
         <hr />
