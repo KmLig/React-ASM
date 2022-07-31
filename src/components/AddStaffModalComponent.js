@@ -13,44 +13,60 @@ const AddStaffModal = (args) => {
         <ModalHeader toggle={toggle}>Thêm nhân viên</ModalHeader>
         <ModalBody>
           <Form className="">
-            <FormGroup className=''>
-              <Label className=''>Tên nhân viên</Label>
-              <Input type='text' className='form-control' />
+            <FormGroup className='row'>
+              <Label className='col-4'>Tên nhân viên</Label>
+              <div className='col-8'>
+                <Input type='text' className='col-6 ' />
+              </div>
             </FormGroup>
-            <FormGroup className=''>
-              <Label>Ngày sinh</Label>
-              <Input type='date' className=''/>
+            <FormGroup className='row'>
+              <Label className='col-4'>Ngày sinh</Label>
+              <div className='col-8'>
+                <Input type='date' className=''/>
+              </div>
             </FormGroup>
-            <FormGroup>
-              <Label>Ngày vào công ty</Label>
-              <Input type='date' />
+            <FormGroup className='row'>
+              <Label className='col-4'>Ngày vào công ty</Label>
+              <div className='col-8'>
+                <Input type='date' />
+              </div>
             </FormGroup>
-            <FormGroup>
-            <Label>Phòng ban:</Label>
-              <select className='form-control'>
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+            <FormGroup className='row'>
+              <Label className='col-4'>Phòng ban:</Label>
+              <div className='col-8'>
+                <select className='form-control'>
+                  <option selected>Choose...</option>
+                  <option value="sale">Sale</option>
+                  <option value="hr">HR</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="it">IT</option> 
+                  <option value="finance">Finance</option> 
+                </select>
+              </div>
             </FormGroup>
-            <FormGroup className=''>
-              <Label className=''>Hệ số lương</Label>
-              <Input type='number' step='0.1' className='form-control' />
+            <FormGroup className='row'>
+              <Label className='col-6'>Hệ số lương</Label>
+              <div className='col-6'>
+                <Input type='number' step='0.1' className='form-control' />
+              </div>
             </FormGroup>
-            <FormGroup className=''>
-              <Label className=''>Số ngày nghỉ còn lại</Label>
-              <Input type='number' step='0.5' className='form-control' />
+            <FormGroup className='row'>
+              <Label className='col-6'>Số ngày nghỉ còn lại</Label>
+              <div className='col-6'>
+                <Input type='number' step='0.5' className='form-control' />
+              </div>
             </FormGroup>
-            <FormGroup className=''>
-              <Label className=''>Số ngày đã làm thêm</Label>
-              <Input type='number' step='0.1' className='form-control' />
+            <FormGroup className='row'>
+              <Label className='col-6'>Số ngày đã làm thêm</Label>
+              <div className='col-6'>
+                <Input type='number' step='0.1' className='form-control' />
+              </div>
             </FormGroup>
           </Form>
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Confirm</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
+          <Button color="danger" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     </div>
