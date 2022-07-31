@@ -96,8 +96,13 @@ class StaffList extends Component {
           </BreadcrumbItem>
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
-        <div className="row rounded-3">          
-          <div className="col-12 p-4 col-lg-6 bg-success rounded-3">
+        <div className="row rounded-3">      
+          <div className="col-12 p-4 col-lg-2 bg-info rounded-3 text-white ">
+            <form>
+              <button className="btn btn-warning" type="submit" value="fa Thêm nhân viên"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm nhân viên</button>
+            </form>
+          </div>    
+          <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 ">
             <Form className="d-flex" role="search">
               <Input
                 onChange={this.onSearchChange}
@@ -108,7 +113,7 @@ class StaffList extends Component {
               />
             </Form>
           </div>
-          <div className="col-12 p-4 offset-md-1 col-lg-5 d-none d-lg-block bg-warning rounded-3 pull-left">
+          <div className="col-12 p-4 col-lg-3 offset-lg-1 d-none d-lg-block bg-warning rounded-3 ">
             
                 <select
                   class="form-control"
