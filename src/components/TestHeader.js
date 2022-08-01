@@ -11,7 +11,6 @@ class NameForm extends Component{
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
     handleChange(event) {
         this.setState({ value: event.target.value });
     }

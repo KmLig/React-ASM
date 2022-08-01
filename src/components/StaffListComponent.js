@@ -102,7 +102,7 @@ class StaffList extends Component {
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
         <div className="row rounded-3">
-          <div className="col-12 p-4 col-lg-2 border rounded-3 mb-2">            
+          <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">            
             <AddStaffModal />
           </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
