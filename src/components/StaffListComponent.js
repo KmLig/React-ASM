@@ -45,9 +45,7 @@ class StaffList extends Component {
   }
 
   renderStaffList(a) {
-    console.log("okie");
     const staffList = a.map((staff) => {
-      console.log(staff.name);
       return (
         <div className={this.state.selectedCol}>
           <Card key={staff.id} onClick={() => this.onStaffSelect(staff)}>
@@ -74,7 +72,6 @@ class StaffList extends Component {
       //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
     });
-    console.log(filteredStaff);
     //#region  const staffList
     /*const staffList = this.props.staffs.map((staff) => {
       return (

@@ -23,9 +23,9 @@ class AddStaffModal extends Component {
       doB: "",
       startDate: "",
       department: "",
-      salaryScale: "",
-      annualLeave: "",
-      overTime: "",
+      salaryScale: 1,
+      annualLeave: 0,
+      overTime: 0,
       image: '/assets/images/alberto.jpg',
       touched: {
         fullName: false,
@@ -40,6 +40,7 @@ class AddStaffModal extends Component {
     this.toggleModal = this.toggleModal.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
   }
 
   toggleModal() {
@@ -56,8 +57,6 @@ class AddStaffModal extends Component {
     });
   }
   handleSubmit(event) {
-    alert("okie");
-    console.log("Current State is: " + JSON.stringify(this.state));
     alert("Current State is: " + JSON.stringify(this.state));
     event.preventDefault();
   }
@@ -70,18 +69,33 @@ class AddStaffModal extends Component {
     const err = {
       fullName: '',
       doB: '',
+      startDate: '',
       salaryScale: '',
       annualLeave: '',
       overTime: ''
     }
-    if(this.state.touched.fullName && fullName < 3) {
+    if(this.state.touched.fullName && fullName.length < 3) {
       err.fullName = "Fullname should be >= 3 characters!";
     }
-    else if (this.state.touched.doB && new Date().getFullYear() - doB.getFullYear() < 18) {
-      err.fullName = "Employee must be >= 18 years old!"
+    else if (this.state.touched.fullName && fullName.length > 30)
+            err.fullName = 'First Name should be <= 30 characters';
+
+    if (this.state.touched.doB && (new Date().getFullYear() - new Date(doB).getFullYear()) < 18) {
+      err.doB = "Employee must be >= 18 years old!"
+    }    
+    if (this.state.touched.salaryScale && salaryScale < 1) {
+      err.salaryScale = "Salary scale must be >= 1"
     }
+    if (this.state.touched.annualLeave && annualLeave < 0) {
+      err.annualLeave = "Salary scale must be >= 0"
+    }
+    if(this.state.touched.overTime && overTime < 0) {
+      err.overTime = "Overtime must be >= 0"
+    }    
+    return err;
   }
   render() {
+    const errors  = this.validate(this.state.fullName, this.state.doB, this.state.salaryScale, this.state.annualLeave, this.state.overTime);
     return (
       <div>
         <Button
@@ -106,8 +120,12 @@ class AddStaffModal extends Component {
                     id="fullName"
                     name="fullName"
                     value={this.state.fullName}
+                    valid={errors.fullName === ''}
+                    invalid={errors.fullName !== ''}
+                    onBlur={this.handleBlur('fullName')}
                     onChange={this.handleInputChange}
                   />
+                  <FormFeedback>{errors.fullName}</FormFeedback>
                 </div>
               </FormGroup>
               <FormGroup className="row">
@@ -120,9 +138,13 @@ class AddStaffModal extends Component {
                     className=""
                     id="doB"
                     name="doB"
+                    valid={errors.doB === ''}
+                    invalid={errors.doB !== ''}
                     value={this.state.doB}
+                    onBlur={this.handleBlur('doB')}
                     onChange={this.handleInputChange}
                   />
+                  <FormFeedback>{errors.doB}</FormFeedback>
                 </div>
               </FormGroup>
               <FormGroup className="row">
@@ -171,8 +193,10 @@ class AddStaffModal extends Component {
                     id="salaryScale"
                     name="salaryScale"
                     value={this.state.salaryScale}
+                    onBlur={this.handleBlur('salaryScale')}
                     onChange={this.handleInputChange}
                   />
+                  <FormFeedback>{errors.salaryScale}</FormFeedback>
                 </div>
               </FormGroup>
               <FormGroup className="row">
@@ -187,8 +211,10 @@ class AddStaffModal extends Component {
                     id="annualLeave"
                     name="annualLeave"
                     value={this.state.annualLeave}
+                    onBlur={this.handleBlur('annualLeave')}
                     onChange={this.handleInputChange}
                   />
+                  <FormFeedback>{errors.annualLeave}</FormFeedback>
                 </div>
               </FormGroup>
               <FormGroup className="row">
@@ -203,8 +229,10 @@ class AddStaffModal extends Component {
                     id="overTime"
                     name="overTime"
                     value={this.state.overTime}
+                    onBlur={this.handleBlur('overTime')}
                     onChange={this.handleInputChange}
                   />
+                  <FormFeedback>{errors.overTime}</FormFeedback>
                 </div>
               </FormGroup>
             </ModalBody>
