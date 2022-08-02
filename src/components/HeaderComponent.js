@@ -104,7 +104,7 @@ class Header extends Component {
             </NavItem>
             <NavItem>
               <NavLink
-                className="navbar-text btn btn-outline-warning rounded-pill me-2 mt-2"
+                className="nar-item btn btn-outline-warning rounded-pill me-2 mt-2"
                 to="/login"
               >
                 <i class="fa fa-sign-in fa-lg" aria-hidden="true"></i> Login

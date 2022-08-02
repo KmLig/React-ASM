@@ -62,7 +62,7 @@ class Salary extends Component {
         <Card className="mt-3 bg-light">
           <CardHeader>
             <CardTitle>
-              <h4>Nhân viên: {staff.name}</h4>
+              Nhân viên: {staff.name}
             </CardTitle>
           </CardHeader>
           <CardBody>

@@ -119,18 +119,9 @@ class StaffList extends Component {
               value={this.state.value}
               onChange={this.onColSelect}
             >
-              <option value="col-2 mt-3">
-                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 6
-                cột
-              </option>
-              <option value="col-3 mt-3">
-                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 4
-                cột
-              </option>
-              <option value="col-4 mt-2">
-                <i class="fa fa-tasks" aria-hidden="true"></i> Chọn giao diện: 3
-                cột
-              </option>
+              <option value="col-2 mt-3">Chọn giao diện: 6 cột </option>
+              <option value="col-3 mt-3">Chọn giao diện: 4 cột </option>
+              <option value="col-4 mt-2">Chọn giao diện: 2 cột </option>
             </select>
           </div>
         </div>

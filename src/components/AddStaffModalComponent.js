@@ -13,6 +13,8 @@ import {
   FormFeedback
 } from "reactstrap";
 
+import { Control, LocalForm, Errors } from "react-redux-form";
+
 class AddStaffModal extends Component {
   constructor(props) {
     super(props);

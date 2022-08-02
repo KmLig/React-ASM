@@ -1,54 +1,25 @@
 import './App.css';
 import React, { Component } from 'react';
-import Home from './components/HomeComponent';
-import StaffList from './components/StaffListComponent';
-import Department from './components/DepartmentComponent';
-import Header from './components/HeaderComponent';
-import Footer from './components/FooterComponent';
+import Main from './components/MainComponent';
 import './App.css';
-import { STAFFS, DEPARTMENTS, ROLE} from './shared/staff';
-import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
-import StaffDetail from './components/StaffDetailComponent';
-import Salary from './components/SalaryComponent';
-import SearchStaff from './components/SearchStaffComponent';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
+
+const store = ConfigureStore();
 
 class App extends Component {  
-    
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      staffs: STAFFS,
-      departments: DEPARTMENTS,
-    };
-  }
   
-  render() {
-    const StaffWithId = ({match}) => {      
-      return(
-          <StaffDetail staff={this.state.staffs.filter((staff) => staff.id === parseInt(match.params.staffId,10))[0]} />
-      );
-    };  
- 
+  render() {   
     return (
-      <BrowserRouter>      
-        <div>
-          <Header />
-          <Switch>
-              <Route path='/homepage' component={Home} />
-              <Route exact path='/employee' component={() => <StaffList staffs={this.state.staffs} />} />
-              <Route path='/employee/:staffId' component={StaffWithId} />
-              <Route path='/searchstaff' component={() => <SearchStaff staff={this.state.staffs} />} />
-              <Route path='/department' component={() => <Department departments={this.state.departments} />} />
-              <Route path='/salary' component={() => <Salary staffs={this.state.staffs} />} />
-              <Redirect to='/homepage' />
-          </Switch>
-          <Footer />
-        </div>
-      </BrowserRouter>
-
+      <Provider store={store}>
+        <BrowserRouter>      
+          <div className="App">
+              <Main />
+            </div>
+        </BrowserRouter>
+      </Provider>
     );
   }  
 }
-
 export default App;
