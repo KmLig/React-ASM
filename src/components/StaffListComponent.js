@@ -34,6 +34,7 @@ class StaffList extends Component {
     };
     this.onColSelect = this.onColSelect.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
+    this.input = React.createRef();
   }
 
   onStaffSelect(staff) {
@@ -43,6 +44,7 @@ class StaffList extends Component {
     this.setState({ selectedCol: event.target.value });
   }
   onSearchChange(event) {
+    console.log(this.searchStaff.value);
     this.setState({ search: event.target.value });
   }
 
@@ -89,23 +91,7 @@ class StaffList extends Component {
     const filteredStaff = this.props.staffs.filter((staff) => {
       //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-    });
-    //#region  const staffList
-    /*const staffList = this.props.staffs.map((staff) => {
-      return (
-        <div className={this.state.selectedCol}>
-          <Card key={staff.id} onClick={() => this.onStaffSelect(staff)}>
-          <Link to={`/employee/${staff.id}`}>
-            <CardBody>
-              <CardImg className="" src={staff.image} alt={staff.name} />
-              <CardTitle className="text-center"><i class="fa fa-user-circle" aria-hidden="true"></i> {staff.name}</CardTitle>
-            </CardBody>
-            </Link>
-          </Card>
-        </div>
-      );
-    });*/
-    //#endregion
+    });   
 
     return (
       <div className="container rounded-3">
@@ -126,8 +112,11 @@ class StaffList extends Component {
                 onChange={this.onSearchChange}
                 className="form-control"
                 type="search"
+                id="searchStaff"
+                name="searchStaff"
                 placeholder=" Nhập tên nhân viên... 🔍 "
                 aria-label="Search"
+                innerRef={(input) => this.searchStaff = input} 
               />
             </Form>
           </div>
