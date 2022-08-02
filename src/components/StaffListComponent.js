@@ -20,6 +20,8 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import AddStaffModal from "./AddStaffModalComponent";
+import { STAFFS } from "../shared/staff";
+
 
 class StaffList extends Component {
   constructor(props) {
@@ -42,6 +44,22 @@ class StaffList extends Component {
   }
   onSearchChange(event) {
     this.setState({ search: event.target.value });
+  }
+
+  addNewStaff(values) {
+    const newStaff = {
+      id: STAFFS[STAFFS.length-1].id + 1,
+      name: values.fullName,
+      doB: values.doB,
+      salaryScale: values.salaryScale,
+      startDate: values.startDate,
+      department: values.department,
+      annualLeave: values.annualLeave,
+      overTime: values.overTime,
+      salary: values.salary,
+      image: '/assets/images/alberto.jpg'
+      }
+    STAFFS.push(newStaff);    
   }
 
   renderStaffList(a) {
@@ -100,7 +118,7 @@ class StaffList extends Component {
         </Breadcrumb>
         <div className="row rounded-3">
           <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">            
-            <AddStaffModal />
+            <AddStaffModal addNewStaff={(values) => this.props.addNewStaff(values)}/>
           </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
             <Form className="d-flex" role="search">
