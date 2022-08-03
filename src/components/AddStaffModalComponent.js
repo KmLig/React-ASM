@@ -49,6 +49,7 @@ class AddStaffModal extends Component {
       isModalOpen: !this.state.isModalOpen,
     });
     alert("Current State is: " + JSON.stringify(values));
+
     console.log(values);
     let x = 0;
     if(values.department === "hr") {
@@ -63,7 +64,7 @@ class AddStaffModal extends Component {
     else if (values.department === "finance") {
       x = 4;
     }
-    console.log(this.props.departments[x]);
+    //create newStaff object as parameter for addStaff function
     const newStaff = {
       id: this.props.id,
       name: values.name,
@@ -76,11 +77,8 @@ class AddStaffModal extends Component {
       image: '/assets/images/alberto.jpg'
     }
     this.props.addStaff({newStaff})
-    //this.props.addStaff(this.props.id, values.name, values.doB, values.startDate, this.props.departments[x], values.salaryScale, values.annualLeave, values.overTime, '/assets/images/alberto.jpg' )
-    // event.preventDefault();
-    console.log(this.props.id);
   }
-  
+
   render() {
     return (
       <div>
@@ -219,7 +217,7 @@ class AddStaffModal extends Component {
                     id="salaryScale"
                     name="salaryScale"
                     validators={{
-                      required,
+                      required
                     }}
                     />   
                   <Errors 
@@ -227,7 +225,7 @@ class AddStaffModal extends Component {
                   model=".salaryScale"
                   show="touched"
                   messages={{
-                    required: "Required!"
+                    required: "Required!",
                   }}
                   />
                 </div>
@@ -245,7 +243,7 @@ class AddStaffModal extends Component {
                     id="annualLeave"
                     name="annualLeave"
                     validators={{
-                      required,
+                      required
                     }}
                     />   
                   <Errors 
@@ -253,7 +251,7 @@ class AddStaffModal extends Component {
                   model=".annualLeave"
                   show="touched"
                   messages={{
-                    required: "Required!"
+                    required: "Required!",
                   }}
                   />
                 </div>
