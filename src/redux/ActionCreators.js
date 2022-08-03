@@ -24,3 +24,16 @@ export const fetchStaffs = () => (dispatch) => {
         dispatch(staffRendering(STAFFS))
     }, 2000);
 }
+export const staffsLoading = () => ({
+    type: ActionTypes.STAFFS_LOADING
+});
+
+export const staffsFailed = (errmess) => ({
+    type: ActionTypes.STAFFS_FAILED,
+    payload: errmess
+})
+
+export const staffRendering = (staffs) => ({
+    type: ActionTypes.STAFFS_RENDERING,
+    payload: staffs
+})
