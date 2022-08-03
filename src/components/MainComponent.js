@@ -20,11 +20,10 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  addStaff: (id, fullName, doB, startDate, department, salaryScale, annualLeave, overTime, image) => dispatch(addStaff(id, fullName, doB, startDate, department, salaryScale, annualLeave, overTime, image))
+  addStaff: ({newStaff}) => dispatch(addStaff({newStaff}))
 })
 
-class Main extends Component {  
-    
+class Main extends Component {      
   constructor(props) {
     super(props);  
   }
@@ -36,8 +35,7 @@ class Main extends Component {
       );
     };  
  
-    return (
-           
+    return (           
         <div>
           <Header />
           <Switch>
@@ -50,9 +48,7 @@ class Main extends Component {
               <Redirect to='/homepage' />
           </Switch>
           <Footer />
-        </div>      
-      
-
+        </div>         
     );
   }  
 }

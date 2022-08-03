@@ -1,16 +1,16 @@
 import * as ActionTypes from './ActionTypes';
 
-export const addStaff = (id, name, doB, startDate, department, salaryScale, annualLeave, overTime, image) => ({
+export const addStaff = ({newStaff}) => ({
     type: ActionTypes.ADD_STAFF,
     payload: {
-        id: id,
-        name: name,
-        doB: doB,
-        startDate: startDate,
-        department: department,
-        salaryScale: salaryScale,
-        annualLeave: annualLeave,
-        overTime: overTime,
-        image: image
+        id: newStaff.id,
+        name: newStaff.name,
+        doB: newStaff.doB,
+        startDate: newStaff.startDate,
+        department: newStaff.department,  
+        salaryScale: newStaff.salaryScale,
+        annualLeave: newStaff.annualLeave,
+        overTime: newStaff.overTime,
+        image: newStaff.image
     }
 });

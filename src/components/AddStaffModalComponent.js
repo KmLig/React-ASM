@@ -64,7 +64,19 @@ class AddStaffModal extends Component {
       x = 4;
     }
     console.log(this.props.departments[x]);
-    this.props.addStaff(this.props.id, values.name, values.doB, values.startDate, this.props.departments[x], values.salaryScale, values.annualLeave, values.overTime, '/assets/images/alberto.jpg')
+    const newStaff = {
+      id: this.props.id,
+      name: values.name,
+      doB: values.doB,
+      startDate: values.startDate,
+      department: this.props.departments[x],
+      salaryScale: values.salaryScale,
+      annualLeave: values.annualLeave,
+      overTime: values.overTime,
+      image: '/assets/images/alberto.jpg'
+    }
+    this.props.addStaff({newStaff})
+    //this.props.addStaff(this.props.id, values.name, values.doB, values.startDate, this.props.departments[x], values.salaryScale, values.annualLeave, values.overTime, '/assets/images/alberto.jpg' )
     // event.preventDefault();
     console.log(this.props.id);
   }
