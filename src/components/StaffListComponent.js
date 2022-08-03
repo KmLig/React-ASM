@@ -20,8 +20,6 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import AddStaffModal from "./AddStaffModalComponent";
-import { STAFFS } from "../shared/staff";
-
 
 class StaffList extends Component {
   constructor(props) {
@@ -48,22 +46,6 @@ class StaffList extends Component {
     this.setState({ search: event.target.value });
   }
 
-  addNewStaff(values) {
-    const newStaff = {
-      id: STAFFS[STAFFS.length-1].id + 1,
-      name: values.fullName,
-      doB: values.doB,
-      salaryScale: values.salaryScale,
-      startDate: values.startDate,
-      department: values.department,
-      annualLeave: values.annualLeave,
-      overTime: values.overTime,
-      salary: values.salary,
-      image: '/assets/images/alberto.jpg'
-      }
-    STAFFS.push(newStaff);    
-  }
-
   renderStaffList(a) {
     const staffList = a.map((staff) => {
       return (
@@ -88,8 +70,8 @@ class StaffList extends Component {
   render() {
     // object destructuring
     const { search } = this.state;
+    //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
     const filteredStaff = this.props.staffs.filter((staff) => {
-      //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
     });   
 

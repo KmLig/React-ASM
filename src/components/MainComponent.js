@@ -35,7 +35,7 @@ class Main extends Component {
       x = 4;
     }
     const newStaff = {
-      id: STAFFS[STAFFS.length-1].id + 1,
+      id: STAFFS.length,
       name: values.fullName,
       doB: values.doB,
       salaryScale: values.salaryScale,
