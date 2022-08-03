@@ -50,8 +50,23 @@ class AddStaffModal extends Component {
     });
     alert("Current State is: " + JSON.stringify(values));
     console.log(values);
-    this.props.addNewStaff(values);
+    let x = 0;
+    if(values.department === "hr") {
+      x = 1;
+    }
+    else if (values.department === "marketing") {
+      x = 2;
+    }
+    else if (values.department === "it") {
+      x = 3;
+    }
+    else if (values.department === "finance") {
+      x = 4;
+    }
+    console.log(this.props.departments[x]);
+    this.props.addStaff(this.props.id, values.name, values.doB, values.startDate, this.props.departments[x], values.salaryScale, values.annualLeave, values.overTime, '/assets/images/alberto.jpg')
     // event.preventDefault();
+    console.log(this.props.id);
   }
   
   render() {
@@ -69,15 +84,15 @@ class AddStaffModal extends Component {
           <LocalForm className="" onSubmit={(values) => this.handleSubmit(values)}>
             <ModalBody>
               <Row className="form-group mb-3">
-                <Label htmlFor="fullName" className="col-4">
+                <Label htmlFor="name" className="col-4">
                   Tên nhân viên
                 </Label>
                 <div className="col-8">
                   <Control.text
-                    model=".fullName"
+                    model=".name"
                     className="form-control"
-                    id="fullName"
-                    name="fullName"
+                    id="name"
+                    name="name"
                     validators={{
                       required,
                       minLength: minLength(3),
@@ -86,7 +101,7 @@ class AddStaffModal extends Component {
                     />   
                   <Errors 
                   className="text-danger"
-                  model=".fullName"
+                  model=".name"
                   show="touched"
                   messages={{
                     required: "Required!",

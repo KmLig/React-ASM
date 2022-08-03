@@ -9,6 +9,7 @@ import Salary from './SalaryComponent';
 import SearchStaff from './SearchStaffComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { addStaff } from '../redux/ActionCreators';
 
 
 const mapStateToProps = state => {
@@ -18,6 +19,9 @@ const mapStateToProps = state => {
   }
 }
 
+const mapDispatchToProps = (dispatch) => ({
+  addStaff: (id, fullName, doB, startDate, department, salaryScale, annualLeave, overTime, image) => dispatch(addStaff(id, fullName, doB, startDate, department, salaryScale, annualLeave, overTime, image))
+})
 
 class Main extends Component {  
     
@@ -38,7 +42,7 @@ class Main extends Component {
           <Header />
           <Switch>
               <Route path='/homepage' component={Home} />
-              <Route exact path='/employee' component={() => <StaffList staffs={this.props.staffs} />} />
+              <Route exact path='/employee' component={() => <StaffList staffs={this.props.staffs} addStaff={this.props.addStaff} departments={this.props.departments} />} />
               <Route path='/employee/:staffId' component={StaffWithId} />
               <Route path='/searchstaff' component={() => <SearchStaff staff={this.props.staffs} />} />
               <Route path='/department' component={() => <Department departments={this.props.departments} />} />
@@ -53,4 +57,4 @@ class Main extends Component {
   }  
 }
 
-export default withRouter(connect(mapStateToProps)(Main));;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));;
