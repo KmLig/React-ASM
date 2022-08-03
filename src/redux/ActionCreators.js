@@ -1,4 +1,6 @@
 import * as ActionTypes from './ActionTypes';
+import { STAFFS } from "../shared/staff";
+
 
 export const addStaff = ({newStaff}) => ({
     type: ActionTypes.ADD_STAFF,
@@ -14,3 +16,11 @@ export const addStaff = ({newStaff}) => ({
         image: newStaff.image
     }
 });
+
+export const fetchStaffs = () => (dispatch) => {
+    dispatch(staffsLoading(true));
+
+    setTimeout(()=>{
+        dispatch(staffRendering(STAFFS))
+    }, 2000);
+}

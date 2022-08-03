@@ -1,4 +1,3 @@
-import { STAFFS } from "../shared/staff";
 import * as ActionTypes from './ActionTypes';
 
 export const Staffs  = (state = STAFFS, action) => {

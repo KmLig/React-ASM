@@ -10,7 +10,8 @@ export const ConfigureStore = () => {
         combineReducers({
             staffs: Staffs,
             departments: Departments
-        })
+        }),
+        applyMiddleware(thunk, logger)
     );
 
     return store;
