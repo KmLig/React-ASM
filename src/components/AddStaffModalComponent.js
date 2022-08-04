@@ -47,7 +47,7 @@ class AddStaffModal extends Component {
     this.setState({
       isModalOpen: !this.state.isModalOpen,
     });
-    this.props.resetAddStaffForm();
+    
     alert("Current State is: " + JSON.stringify(values));
 
     console.log(values);
@@ -74,9 +74,10 @@ class AddStaffModal extends Component {
       salaryScale: values.salaryScale,
       annualLeave: values.annualLeave,
       overTime: values.overTime,
-      image: '/assets/images/alberto.jpg'
+      image: '/assets/images/alberto.png'
     }
     this.props.addStaff({newStaff})
+    this.props.resetAddStaffForm();
   }
 
   render() {

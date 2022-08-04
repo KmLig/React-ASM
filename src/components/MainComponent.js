@@ -51,7 +51,7 @@ class Main extends Component {
           <Header />
           <Switch>
               <Route path='/homepage' component={Home} />
-              <Route exact path='/employee' component={() => <StaffList staffs={this.props.staffs.staffs} addStaff={this.props.addStaff} departments={this.props.departments.departments} staffsLoading={this.props.staffs.isLoading} staffFailed={this.props.staffs.errMess}/>} resetAddStaffForm={this.props.resetAddStaffForm}/>
+              <Route exact path='/employee' component={() => <StaffList staffs={this.props.staffs.staffs} addStaff={this.props.addStaff} departments={this.props.departments.departments} staffsLoading={this.props.staffs.isLoading} staffFailed={this.props.staffs.errMess} resetAddStaffForm={this.props.resetAddStaffForm} />} />
               <Route path='/employee/:staffId' component={StaffWithId} />
               <Route path='/searchstaff' component={() => <SearchStaff staff={this.props.staffs.staffs} />} />
               <Route path='/department' component={() => <Department departments={this.props.departments.departments} isLoading={this.props.departments.isLoading} isFailed={this.props.departments.errMess}/>} />

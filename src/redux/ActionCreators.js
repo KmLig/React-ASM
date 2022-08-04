@@ -50,9 +50,27 @@ export const staffsRendering = (staffs) => ({
 export const fetchDepartments = () => (dispatch) => {
     dispatch(departmentsLoading(true));
 
-    setTimeout(()=>{
-        dispatch(departmentsRendering(DEPARTMENTS))
-    }, 2000);
+    return fetch(baseUrl + 'departments')
+    .then(
+        (response) => {
+          if (response.ok) {
+            return response;
+          } else {
+            const error = new Error(
+              "Error" + response.status + ": " + response.statusText
+            );
+            error.response = response;
+            throw error;
+          }
+        },
+        (error) => {
+          let errmess = new Error(error.message);
+          throw errmess;
+        }
+      )
+      .then((response) => response.json())      
+      .then((departments) => dispatch(departmentsRendering(departments)))
+      .catch((error) => dispatch(departmentsFailed(error.message)));
 }
 export const departmentsLoading = () => ({
     type: ActionTypes.DEPARTMENTS_LOADING

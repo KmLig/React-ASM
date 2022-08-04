@@ -9,5 +9,5 @@ export const InitialAddStaff = {
     salaryScale: '',
     annualLeave: '',
     overTime: '',
-    image: '/assets/images/alberto.jpg'    
+    image: '/assets/images/alberto.png'    
 }
