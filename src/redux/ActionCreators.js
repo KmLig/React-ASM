@@ -46,7 +46,6 @@ export const staffsRendering = (staffs) => ({
     payload: staffs
 })
 
-
 export const fetchDepartments = () => (dispatch) => {
     dispatch(departmentsLoading(true));
 

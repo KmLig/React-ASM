@@ -5,6 +5,7 @@ import Department from "./DepartmentComponent";
 import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
 import StaffDetail from "./StaffDetailComponent";
+import DepartmentDetaiComponent from "./DepartmentDetailComponent";
 import Salary from "./SalaryComponent";
 import SearchStaff from "./SearchStaffComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
@@ -67,6 +68,25 @@ class Main extends Component {
         />
       );
     };
+    const DepartmentWithId = ({ match }) => {
+      console.log(match.params.departmentId);
+      const staff_de = this.props.staffs.staffs.filter(
+        (staff) => staff.departmentId === match.params.departmentId
+      )
+      console.log(staff_de)
+      return (
+        <DepartmentDetaiComponent
+          staffs={
+            this.props.staffs.staffs.filter(
+              (staff) => staff.departmentId === match.params.departmentId
+            )
+          }
+          isLoading={this.props.staffs.isLoading}
+          errMess={this.props.staffs.errMess}
+          department={this.props.departments.departments.filter((department) => department.id === match.params.departmentId) }
+        />
+      );
+    };
 
     return (
       <div>
@@ -93,6 +113,7 @@ class Main extends Component {
             component={() => <SearchStaff staff={this.props.staffs.staffs} />}
           />
           <Route
+            exact
             path="/department"
             component={() => (
               <Department
@@ -102,6 +123,7 @@ class Main extends Component {
               />
             )}
           />
+          <Route path="/department/:departmentId" component={DepartmentWithId} />
           <Route
             path="/salary"
             component={() => (

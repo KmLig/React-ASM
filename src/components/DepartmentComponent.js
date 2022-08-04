@@ -14,7 +14,8 @@ import { Loading } from "./LoadingComponent";
 const RenderDepartment = ({ department }) => {
   if (department != null)
     return (
-      <Card className="mt-2 bg-light ">
+      <Card className="mt-2 bg-light "  key={department.id} >
+      < Link to={`/department/${department.id}`}>
         <CardHeader>
             <CardTitle>
                 <h4>Phòng ban: {department.name}</h4>
@@ -23,6 +24,7 @@ const RenderDepartment = ({ department }) => {
         <CardBody>          
           <CardText>Nhân viên: {department.numberOfStaff}</CardText>
         </CardBody>
+        </Link>
       </Card>
     );
   else return <div></div>;
