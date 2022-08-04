@@ -11,66 +11,59 @@ import {
   CardHeader,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import { Loading } from './LoadingComponent';
 
 class Salary extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      staffList: this.props.staffs
-    };
-    this.salaryCalc = this.salaryCalc.bind(this);
+      staffList: this.props.salaries
+    };    
     this.sortSalary = this.sortSalary.bind(this);
     this.resetSalarySort = this.resetSalarySort.bind(this);
   }
-  salaryCalc(salaryScale, overTime) {
+  /* salaryCalc(salaryScale, overTime) {
     const basicSalary = 3000000;
     const overTimeSalary = 200000;
     return parseInt(salaryScale * basicSalary + overTime * overTimeSalary);
-  }
+  } */
   sortSalary(sortType) {
     let sortedStaffList = [...this.state.staffList];
-    let vm = this;
+    // let vm = this;
     if (sortType === "increase") {
       sortedStaffList.sort(function (a, b) {
-        return (
-          vm.salaryCalc(a.salaryScale, a.overTime) -
-          vm.salaryCalc(b.salaryScale, b.overTime)
-        );
+        return (a.salary - b.salary);
       });
     }
 
     if (sortType === "decrease") {
       sortedStaffList.sort(function (a, b) {
-        return (
-          vm.salaryCalc(b.salaryScale, b.overTime) -
-          vm.salaryCalc(a.salaryScale, a.overTime)
-        );
+        return (b.salary - a.salary);
       });
     }
     this.setState({ staffList: sortedStaffList });
     console.log(this.state.staffList);
   }
   resetSalarySort() {
-    this.setState({ staffList: this.props.staffs });
+    this.setState({ staffList: this.props.salaries });
     console.log("props");
-    console.log(this.props.staffs);
+    console.log(this.props.salaries);
   }
-  RenderSalary = (staff) => {
-    let luong = this.salaryCalc(staff.salaryScale, staff.overTime);
-    if (staff != null)
+  RenderSalary = (staffSalary) => {
+    if (staffSalary != null)
       return (
         <Card className="mt-3 bg-light">
           <CardHeader>
             <CardTitle>
-              Nhân viên: {staff.name}
+              Nhân viên: {staffSalary.name}
             </CardTitle>
           </CardHeader>
           <CardBody>
-            <CardText>Mã nhân viên: {staff.id}</CardText>
-            <CardText>Hệ số lương: {staff.salaryScale}</CardText>
-            <CardText>Số ngày làm thêm: {staff.overTime}</CardText>
+            <CardText>Mã nhân viên: {staffSalary.id}</CardText>
+            <CardText>Hệ số lương: {staffSalary.salaryScale}</CardText>
+            <CardText>Số ngày làm thêm: {staffSalary.overTime}</CardText>
             <CardFooter>
-              <b>Lương: {luong}</b>
+              <b>Lương: {staffSalary.salary}</b>
             </CardFooter>
           </CardBody>
         </Card>
@@ -78,43 +71,56 @@ class Salary extends Component {
     else return <div></div>;
   };
   render() {
-    const salary = this.state.staffList.map((staff) => {
+    const salary = this.state.staffList.map((staffSalary) => {
       return (
-        <div className="col-12 col-md-6 col-lg-4" key={staff.id}>
+        <div className="col-12 col-md-6 col-lg-4" key={staffSalary.id}>
           <div className="bg-dark text-black rounded-3">
-            {this.RenderSalary(staff)}
+            {this.RenderSalary(staffSalary)}
           </div>
         </div>
       );
     });
-    return (
-      <div className="container">
-        <hr className="mt-3" />
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <Link to="/homepage">Home</Link>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
-        </Breadcrumb>
-        <Button
-          className="btn btn-success"
-          onClick={() => this.sortSalary("increase")}
-        >
-          <span class="fa fa-sort-amount-asc"></span> Lương Thấp
-        </Button>
-        <Button
-          className="btn btn-success ms-4"
-          onClick={() => this.sortSalary("decrease")}
-        >
-          <span class="fa fa-sort-amount-desc"></span> Lương Cao
-        </Button>
-        <Button className="btn btn-danger ms-5" onClick={this.resetSalarySort}>
-          <span class="fa fa-refresh"></span> Reset
-        </Button>
-        <hr />
-        <div className="row">{salary}</div>
-      </div>
-    );
+    if (this.props.isLoading) {
+      return (
+        <Loading />
+      )    
+    }
+    else if (this.props.isFailed) {
+      return (
+        <h4>{this.props.isFailed}</h4>
+      )
+    }
+    else {
+      return (
+        <div className="container">
+          <hr className="mt-3" />
+          <Breadcrumb>
+            <BreadcrumbItem>
+              <Link to="/homepage">Home</Link>
+            </BreadcrumbItem>
+            <BreadcrumbItem active>Salary Sheet</BreadcrumbItem>
+          </Breadcrumb>
+          <Button
+            className="btn btn-success"
+            onClick={() => this.sortSalary("increase")}
+          >
+            <span class="fa fa-sort-amount-asc"></span> Lương Thấp
+          </Button>
+          <Button
+            className="btn btn-success ms-4"
+            onClick={() => this.sortSalary("decrease")}
+          >
+            <span class="fa fa-sort-amount-desc"></span> Lương Cao
+          </Button>
+          <Button className="btn btn-danger ms-5" onClick={this.resetSalarySort}>
+            <span class="fa fa-refresh"></span> Reset
+          </Button>
+          <hr />
+          <div className="row">{salary}</div>
+        </div>
+      );
+    }
+    
   }
 }
 

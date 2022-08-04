@@ -85,3 +85,42 @@ export const departmentsRendering = (departments) => ({
     type: ActionTypes.DEPARTMENTS_RENDERING,
     payload: departments
 })
+
+export const fetchSalaries = () => (dispatch) => {
+    dispatch(salariesLoading(true));
+
+    return fetch(baseUrl + 'staffsSalary')
+    .then(
+        (response) => {
+          if (response.ok) {
+            return response;
+          } else {
+            const error = new Error(
+              "Error" + response.status + ": " + response.statusText
+            );
+            error.response = response;
+            throw error;
+          }
+        },
+        (error) => {
+          let errmess = new Error(error.message);
+          throw errmess;
+        }
+      )
+      .then((response) => response.json())      
+      .then((salaries) => dispatch(salariesRendering(salaries)))
+      .catch((error) => dispatch(salariesFailed(error.message)));
+}
+export const salariesLoading = () => ({
+    type: ActionTypes.SALARIES_LOADING
+});
+
+export const salariesFailed = (errmess) => ({
+    type: ActionTypes.SALARIES_FAILED,
+    payload: errmess
+})
+
+export const salariesRendering = (salaries) => ({
+    type: ActionTypes.SALARIES_RENDERING,
+    payload: salaries
+})

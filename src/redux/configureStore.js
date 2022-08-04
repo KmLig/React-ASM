@@ -5,6 +5,7 @@ import { Departments } from './departments';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { InitialAddStaff } from './forms';
+import { Salaries } from './salaries';
 
 
 export const ConfigureStore = () => {
@@ -12,6 +13,7 @@ export const ConfigureStore = () => {
         combineReducers({
             staffs: Staffs,
             departments: Departments,
+            salaries: Salaries,
             ...createForms({
                 addStaff: InitialAddStaff
             })

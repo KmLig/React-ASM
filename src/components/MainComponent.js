@@ -12,6 +12,7 @@ import { connect } from "react-redux";
 import {
   addStaff,
   fetchDepartments,
+  fetchSalaries,
   fetchStaffs,
 } from "../redux/ActionCreators";
 import { actions } from "react-redux-form";
@@ -20,6 +21,7 @@ const mapStateToProps = (state) => {
   return {
     staffs: state.staffs,
     departments: state.departments,
+    salaries: state.salaries,
   };
 };
 
@@ -30,6 +32,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   fetchDepartments: () => {
     dispatch(fetchDepartments());
+  },
+  fetchSalaries: () => {
+    dispatch(fetchSalaries());
   },
   resetAddStaffForm: () => {
     dispatch(actions.reset("addStaff"));
@@ -44,6 +49,7 @@ class Main extends Component {
   componentDidMount() {
     this.props.fetchStaffs();
     this.props.fetchDepartments();
+    this.props.fetchSalaries();
   }
 
   render() {
@@ -98,7 +104,14 @@ class Main extends Component {
           />
           <Route
             path="/salary"
-            component={() => <Salary staffs={this.props.staffs.staffs} />}
+            component={() => (
+              <Salary
+                staffs={this.props.staffs.staffs}
+                salaries={this.props.salaries.salaries}
+                isLoading={this.props.salaries.isLoading}
+                isFailed={this.props.salaries.errMess}
+              />
+            )}
           />
           <Redirect to="/homepage" />
         </Switch>

@@ -13,10 +13,11 @@ import { Link } from "react-router-dom";
 import { Loading } from "./LoadingComponent";
 
 function RenderStaff({ staff, departments }) {
-  if (staff != null) {
+  if (staff != null && departments != null) {
     const department = departments.find(
       (department) => staff.departmentId === department.id
     );
+    console.log(department);
     return (
       <Card key={staff.id} className="mt-2">
         <div className="row">
@@ -36,7 +37,7 @@ function RenderStaff({ staff, departments }) {
               </CardText>
               <CardText>
                 Phòng ban: {
-                 department && department.name         
+                  department && department.name  // check null       
                 }
               </CardText>
               <CardText>Số ngày nghỉ còn lại: {staff.annualLeave}</CardText>
