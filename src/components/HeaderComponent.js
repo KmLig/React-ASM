@@ -5,17 +5,9 @@ import {
   Nav,
   NavbarToggler,
   Collapse,
-  NavItem,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Form,
-  FormGroup,
-  Label,
-  Input,
+  NavItem  
 } from "reactstrap";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {

@@ -4,8 +4,7 @@ import {
   Modal,
   ModalHeader,
   ModalBody,
-  ModalFooter,
-  Form,
+  ModalFooter,  
   Label,
   Input,
   FormGroup,
@@ -13,7 +12,7 @@ import {
   FormFeedback,
   Row
 } from "reactstrap";
-import { Control, LocalForm, Errors } from "react-redux-form";
+import { Control, Form, Errors, acitons } from "react-redux-form";
 import { STAFFS } from "../shared/staff";
 
 const required = (val) => val && val.length;
@@ -48,6 +47,7 @@ class AddStaffModal extends Component {
     this.setState({
       isModalOpen: !this.state.isModalOpen,
     });
+    this.props.resetAddStaffForm();
     alert("Current State is: " + JSON.stringify(values));
 
     console.log(values);
@@ -91,7 +91,7 @@ class AddStaffModal extends Component {
         </Button>
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
           <ModalHeader toggle={this.toggleModal}>Thêm nhân viên</ModalHeader>
-          <LocalForm className="" onSubmit={(values) => this.handleSubmit(values)}>
+          <Form model="addStaff" className="" onSubmit={(values) => this.handleSubmit(values)}>
             <ModalBody>
               <Row className="form-group mb-3">
                 <Label htmlFor="name" className="col-4">
@@ -291,7 +291,7 @@ class AddStaffModal extends Component {
                 Cancel
               </Button>
             </ModalFooter>
-          </LocalForm>
+          </Form>
         </Modal>
       </div>
     );

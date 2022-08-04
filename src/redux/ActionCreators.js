@@ -1,27 +1,16 @@
 import * as ActionTypes from './ActionTypes';
-import { STAFFS } from "../shared/staff";
-
+import { STAFFS, DEPARTMENTS } from "../shared/staff";
 
 export const addStaff = ({newStaff}) => ({
     type: ActionTypes.ADD_STAFF,
-    payload: {
-        id: newStaff.id,
-        name: newStaff.name,
-        doB: newStaff.doB,
-        startDate: newStaff.startDate,
-        department: newStaff.department,  
-        salaryScale: newStaff.salaryScale,
-        annualLeave: newStaff.annualLeave,
-        overTime: newStaff.overTime,
-        image: newStaff.image
-    }
+    payload: STAFFS.concat(newStaff)
 });
 
 export const fetchStaffs = () => (dispatch) => {
     dispatch(staffsLoading(true));
 
     setTimeout(()=>{
-        dispatch(staffRendering(STAFFS))
+        dispatch(staffsRendering(STAFFS))
     }, 2000);
 }
 export const staffsLoading = () => ({
@@ -33,7 +22,29 @@ export const staffsFailed = (errmess) => ({
     payload: errmess
 })
 
-export const staffRendering = (staffs) => ({
+export const staffsRendering = (staffs) => ({
     type: ActionTypes.STAFFS_RENDERING,
     payload: staffs
+})
+
+
+export const fetchDepartments = () => (dispatch) => {
+    dispatch(departmentsLoading(true));
+
+    setTimeout(()=>{
+        dispatch(departmentsRendering(DEPARTMENTS))
+    }, 2000);
+}
+export const departmentsLoading = () => ({
+    type: ActionTypes.DEPARTMENTS_LOADING
+});
+
+export const departmentsFailed = (errmess) => ({
+    type: ActionTypes.DEPARTMENTS_FAILED,
+    payload: errmess
+})
+
+export const departmentsRendering = (departments) => ({
+    type: ActionTypes.DEPARTMENTS_RENDERING,
+    payload: departments
 })

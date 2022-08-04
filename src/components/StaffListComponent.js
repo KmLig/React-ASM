@@ -21,6 +21,7 @@ import {
 import { Link } from "react-router-dom";
 import AddStaffModal from "./AddStaffModalComponent";
 import { STAFFS } from "../shared/staff";
+import { Loading } from "./LoadingComponent";
 
 
 class StaffList extends Component {
@@ -64,7 +65,20 @@ class StaffList extends Component {
         </div>
       );
     });
-    return staffList;
+    if (this.props.staffsLoading) {
+      return (
+        <Loading />
+      )    
+    }
+    else if (this.props.staffFailed) {
+      return (
+        <h4>{this.props.staffFailed}</h4>
+      )
+    }
+    else  {
+      return staffList;            
+    }
+    
   }
 
   render() {
@@ -86,7 +100,7 @@ class StaffList extends Component {
         </Breadcrumb>
         <div className="row rounded-3">
           <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">            
-            <AddStaffModal addStaff={this.props.addStaff} id={this.props.staffs.length} departments={this.props.departments}/>
+            <AddStaffModal addStaff={this.props.addStaff} id={this.props.staffs.length} departments={this.props.departments} resetAddStaffForm={this.props.resetAddStaffForm}/>
           </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
             <Form className="d-flex" role="search">

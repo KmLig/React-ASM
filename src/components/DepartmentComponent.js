@@ -9,10 +9,9 @@ import {
   CardHeader,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import { Loading } from "./LoadingComponent";
 
 const RenderDepartment = ({ department }) => {
-  console.log(department);
-  console.log(department.name);
   if (department != null)
     return (
       <Card className="mt-2 bg-light ">
@@ -38,18 +37,29 @@ const Department = (props) => {
       </div>
     );
   });
-  return (
-    <div className="container">
-        <hr className="mt-3"/>
-            <Breadcrumb>      
-                <BreadcrumbItem><Link to='/homepage'>Home</Link></BreadcrumbItem>      
-                <BreadcrumbItem active>Department</BreadcrumbItem>
-            </Breadcrumb>
-        <div className="row">        
-            {department}
-        </div>
-    </div>
-  )
+  if (props.isLoading) {
+    return (
+      <Loading />
+    )    
+  }
+  else if (props.isFailed) {
+    return (
+      <h4>{props.isFailed}</h4>
+    )
+  }
+  else
+    return (
+      <div className="container">
+          <hr className="mt-3"/>
+              <Breadcrumb>      
+                  <BreadcrumbItem><Link to='/homepage'>Home</Link></BreadcrumbItem>      
+                  <BreadcrumbItem active>Department</BreadcrumbItem>
+              </Breadcrumb>
+          <div className="row">        
+              {department}
+          </div>
+      </div>
+    )
 };
 
 export default Department;
