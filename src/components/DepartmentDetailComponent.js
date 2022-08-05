@@ -23,7 +23,6 @@ const renderStaffList = (a) => {
                 <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
                 {staff.name}
               </CardTitle>
-              <CardText className="text-center">{staff.departmentId}</CardText>
             </CardBody>
         </Card>
       </div>
