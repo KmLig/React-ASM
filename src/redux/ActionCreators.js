@@ -1,6 +1,8 @@
 import * as ActionTypes from './ActionTypes';
 import { STAFFS, DEPARTMENTS } from "../shared/staff";
 import { baseUrl } from '../shared/baseUrl';
+import { createBrowserHistory } from 'history';
+
 
 export const addStaff = (staff) => ({
     type: ActionTypes.ADD_STAFF,
@@ -91,6 +93,7 @@ export const removeStaff = (staff) => ({
   type: ActionTypes.DELETE_STAFF,
   payload: staff
 });
+const browserHistory = createBrowserHistory();
 
 export const deleteStaff = ({ deletedStaff }) => (dispatch) => {
 const staff_delete = {
@@ -125,7 +128,7 @@ return fetch(baseUrl + 'staffs/' + staff_delete.id, {
   error => {
         throw error;
   })
-.then(response => response.json())
+.then(browserHistory.push('/homepage'))
 .then(response => dispatch(removeStaff(response)))
 .catch(error =>  { console.log('Patch staff', error.message); alert('This staff could not be patched\nError: '+error.message); });
 };
