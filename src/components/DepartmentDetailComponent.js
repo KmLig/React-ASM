@@ -32,7 +32,6 @@ const renderStaffList = (a) => {
 }
 const DepartmentDetail = (props) => {
   if (props.department != null) {   
-
     const phongban = props.department[0]
     return (
       <div className="container">
