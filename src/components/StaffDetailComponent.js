@@ -11,14 +11,14 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Loading } from "./LoadingComponent";
-import  RenderStaff from './RenderStaffComponent';
+import RenderStaff from "./RenderStaffComponent";
 
-class StaffDetail extends Component{
-  constructor(props){
-    super(props)
+class StaffDetail extends Component {
+  constructor(props) {
+    super(props);
   }
 
- render() {
+  render() {
     if (this.props.isLoading) {
       return <Loading />;
     } else if (this.props.errMess) {
@@ -30,7 +30,6 @@ class StaffDetail extends Component{
         </div>
       );
     } else if (this.props.staff != null) {
-      
       return (
         <div className="container">
           <div className="row">
@@ -44,12 +43,18 @@ class StaffDetail extends Component{
               </BreadcrumbItem>
               <BreadcrumbItem active>{this.props.staff.name}</BreadcrumbItem>
             </Breadcrumb>
-            <RenderStaff staff={this.props.staff} departments={this.props.departments} patchStaff={this.props.patchStaff} staffId={this.props.staffId}/>
+            <RenderStaff
+              staff={this.props.staff}
+              departments={this.props.departments}
+              patchStaff={this.props.patchStaff}
+              staffId={this.props.staffId}
+              deleteStaff={this.props.deleteStaff}
+            />
           </div>
         </div>
       );
     }
-  };
+  }
 }
 
 export default StaffDetail;

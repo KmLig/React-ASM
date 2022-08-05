@@ -46,7 +46,7 @@ export const postStaff = ({newStaff}) => (dispatch) => {
 };
 export const updateStaff = (staff) => ({
   type: ActionTypes.UPDATE_STAFF,
-  payload: STAFFS.concat(staff)
+  payload: staff
 });
 
 export const patchStaff = ({ updatedStaff }) => (dispatch) => {
@@ -84,6 +84,49 @@ return fetch(baseUrl + 'staffs', {
   })
 .then(response => response.json())
 .then(response => dispatch(updateStaff(response)))
+.catch(error =>  { console.log('Patch staff', error.message); alert('This staff could not be patched\nError: '+error.message); });
+};
+
+export const removeStaff = (staff) => ({
+  type: ActionTypes.DELETE_STAFF,
+  payload: staff
+});
+
+export const deleteStaff = ({ deletedStaff }) => (dispatch) => {
+const staff_delete = {
+  id: deletedStaff.id,
+  name: deletedStaff.name,
+  doB: deletedStaff.doB,
+  startDate: deletedStaff.startDate,
+  departmentId: deletedStaff.departmentId,
+  salaryScale: deletedStaff.salaryScale,
+  annualLeave: deletedStaff.annualLeave,
+  overTime: deletedStaff.overTime,
+  image: deletedStaff.image
+}
+
+return fetch(baseUrl + 'staffs', {
+    method: 'DELETE',
+    body: JSON.stringify(staff_delete),
+    headers: {
+        "Content-Type": "application/json"
+      },
+    credentials: "same-origin"
+})
+.then(response => {
+    if (response.ok) {
+      return response;
+    } else {
+      var error = new Error('Error ' + response.status + ': ' + response.statusText);
+      error.response = response;
+      throw error;
+    }
+  },
+  error => {
+        throw error;
+  })
+.then(response => response.json())
+.then(response => dispatch(removeStaff(response)))
 .catch(error =>  { console.log('Patch staff', error.message); alert('This staff could not be patched\nError: '+error.message); });
 };
   

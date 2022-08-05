@@ -87,8 +87,35 @@ class RenderStaff extends Component {
   }
   handleSubmit_2(values) {
     this.setState({
-      isModalOpen: !this.state.isModalOpen_1,
+      isModalOpen_2: !this.state.isModalOpen_2,
     });
+    alert("Current State is: " + JSON.stringify(values));
+
+    console.log(values);
+    let x = 0;
+    if (values.department === "hr") {
+      x = 1;
+    } else if (values.department === "marketing") {
+      x = 2;
+    } else if (values.department === "it") {
+      x = 3;
+    } else if (values.department === "finance") {
+      x = 4;
+    }
+    //update Staff object as parameter for patchStaff function
+    const deletedStaff = {
+      id: this.props.staffId,
+      name: values.name,
+      doB: values.doB,
+      startDate: values.startDate,
+      department: this.props.departments[x],
+      salaryScale: values.salaryScale,
+      annualLeave: values.annualLeave,
+      overTime: values.overTime,
+      image: "/assets/images/alberto.png",
+    };
+    this.props.deletedStaff({ deletedStaff });
+    //this.props.resetAddStaffForm();
   }
   render() {
     if (this.props.staff != null && this.props.departments != null) {

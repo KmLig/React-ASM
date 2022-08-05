@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 import {
   postStaff,
   patchStaff,
+  deleteStaff,
   fetchDepartments,
   fetchSalaries,
   fetchStaffs,
@@ -30,6 +31,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => ({
   postStaff: ({ newStaff }) => dispatch(postStaff({ newStaff })),
   patchStaff: ({ updatedStaff }) => dispatch(patchStaff({ updatedStaff})),
+  deleteStaff: ({ deletedStaff }) => dispatch(deleteStaff({ deletedStaff })),
   fetchStaffs: () => {
     dispatch(fetchStaffs());
   },
@@ -69,6 +71,7 @@ class Main extends Component {
           departments={this.props.departments.departments}
           patchStaff={this.props.patchStaff}
           staffId={match.params.staffId}
+          deleteStaff={this.props.deleteStaff}
         />
       );
     };
