@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history';
 
 export const addStaff = (staff) => ({
     type: ActionTypes.ADD_STAFF,
-    payload: STAFFS.concat(staff)
+    payload: staff
 });
 
 export const postStaff = ({newStaff}) => (dispatch) => {
@@ -128,7 +128,7 @@ return fetch(baseUrl + 'staffs/' + staff_delete.id, {
   error => {
         throw error;
   })
-.then(browserHistory.push('/homepage'))
+.then(() =>window.location.replace('/employee/'))
 .then(response => dispatch(removeStaff(response)))
 .catch(error =>  { console.log('Patch staff', error.message); alert('This staff could not be patched\nError: '+error.message); });
 };
