@@ -51,18 +51,17 @@ class AddStaffModal extends Component {
     alert("Current State is: " + JSON.stringify(values));
 
     console.log(values);
-    let x = 0;
-    if(values.department === "hr") {
-      x = 1;
-    }
-    else if (values.department === "marketing") {
-      x = 2;
-    }
-    else if (values.department === "it") {
-      x = 3;
-    }
-    else if (values.department === "finance") {
-      x = 4;
+    var x;
+    if (values.department === "sale") {
+      x ="Dept01";
+    } else if (values.department === "hr") {
+      x = "Dept02";
+    } else if (values.department === "marketing") {
+      x = "Dept03";
+    } else if (values.department === "it") {
+      x = "Dept04";
+    } else if (values.department === "finance") {
+      x = "Dept05";
     }
     //create newStaff object as parameter for addStaff function
     const newStaff = {
@@ -70,7 +69,7 @@ class AddStaffModal extends Component {
       name: values.name,
       doB: values.doB,
       startDate: values.startDate,
-      department: this.props.departments[x],
+      departmentId: x,
       salaryScale: values.salaryScale,
       annualLeave: values.annualLeave,
       overTime: values.overTime,

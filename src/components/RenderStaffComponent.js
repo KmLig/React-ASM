@@ -60,15 +60,17 @@ class RenderStaff extends Component {
     alert("Current State is: " + JSON.stringify(values));
 
     console.log(values);
-    let x = 0;
-    if (values.department === "hr") {
-      x = 1;
+    var x;
+    if (values.department === "sale") {
+      x ="Dept01";
+    } else if (values.department === "hr") {
+      x = "Dept02";
     } else if (values.department === "marketing") {
-      x = 2;
+      x = "Dept03";
     } else if (values.department === "it") {
-      x = 3;
+      x = "Dept04";
     } else if (values.department === "finance") {
-      x = 4;
+      x = "Dept05";
     }
     //update Staff object as parameter for patchStaff function
     const updatedStaff = {
@@ -76,7 +78,7 @@ class RenderStaff extends Component {
       name: values.name,
       doB: values.doB,
       startDate: values.startDate,
-      department: this.props.departments[x],
+      departmentId: x,
       salaryScale: values.salaryScale,
       annualLeave: values.annualLeave,
       overTime: values.overTime,
@@ -92,15 +94,17 @@ class RenderStaff extends Component {
     alert("Current State is: " + JSON.stringify(values));
 
     console.log(values);
-    let x = 0;
-    if (values.department === "hr") {
-      x = 1;
+    var x;
+    if (values.department === "sale") {
+      x ="Dept01";
+    } else if (values.department === "hr") {
+      x = "Dept02";
     } else if (values.department === "marketing") {
-      x = 2;
+      x = "Dept03";
     } else if (values.department === "it") {
-      x = 3;
+      x = "Dept04";
     } else if (values.department === "finance") {
-      x = 4;
+      x = "Dept05";
     }
     //update Staff object as parameter for patchStaff function
     const deletedStaff = {
@@ -108,7 +112,7 @@ class RenderStaff extends Component {
       name: values.name,
       doB: values.doB,
       startDate: values.startDate,
-      department: this.props.departments[x],
+      departmentId: x,
       salaryScale: values.salaryScale,
       annualLeave: values.annualLeave,
       overTime: values.overTime,
