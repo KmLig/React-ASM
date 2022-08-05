@@ -11,7 +11,7 @@ import SearchStaff from "./SearchStaffComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import {
-  addStaff,
+  postStaff,
   fetchDepartments,
   fetchSalaries,
   fetchStaffs,
@@ -27,7 +27,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  addStaff: ({ newStaff }) => dispatch(addStaff({ newStaff })),
+  postStaff: ({ newStaff }) => dispatch(postStaff({ newStaff })),
   fetchStaffs: () => {
     dispatch(fetchStaffs());
   },
@@ -99,7 +99,7 @@ class Main extends Component {
             component={() => (
               <StaffList
                 staffs={this.props.staffs.staffs}
-                addStaff={this.props.addStaff}
+                postStaff={this.props.postStaff}
                 departments={this.props.departments.departments}
                 staffsLoading={this.props.staffs.isLoading}
                 staffFailed={this.props.staffs.errMess}

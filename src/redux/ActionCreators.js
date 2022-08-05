@@ -2,11 +2,49 @@ import * as ActionTypes from './ActionTypes';
 import { STAFFS, DEPARTMENTS } from "../shared/staff";
 import { baseUrl } from '../shared/baseUrl';
 
-export const addStaff = ({newStaff}) => ({
+export const addStaff = (staff) => ({
     type: ActionTypes.ADD_STAFF,
-    payload: STAFFS.concat(newStaff)
+    payload: STAFFS.concat(staff)
 });
 
+export const postStaff = ({newStaff}) => (dispatch) => {
+  const newStaff_add = {
+    id: newStaff.id,
+    name: newStaff.name,
+    doB: newStaff.doB,
+    startDate: newStaff.startDate,
+    departmentId: newStaff.departmentId,
+    salaryScale: newStaff.salaryScale,
+    annualLeave: newStaff.annualLeave,
+    overTime: newStaff.overTime,
+    image: newStaff.image
+  }
+
+  return fetch(baseUrl + 'staffs', {
+      method: 'POST',
+      body: JSON.stringify(newStaff_add),
+      headers: {
+          "Content-Type": "application/json"
+        },
+      credentials: "same-origin"
+  })
+  .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        var error = new Error('Error ' + response.status + ': ' + response.statusText);
+        error.response = response;
+        throw error;
+      }
+    },
+    error => {
+          throw error;
+    })
+  .then(response => response.json())
+  .then(response => dispatch(addStaff(response)))
+  .catch(error =>  { console.log('Post staff', error.message); alert('New staff could not be posted\nError: '+error.message); });
+};
+  
 export const fetchStaffs = () => (dispatch) => {
     dispatch(staffsLoading(true));
 

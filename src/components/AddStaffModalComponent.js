@@ -76,7 +76,7 @@ class AddStaffModal extends Component {
       overTime: values.overTime,
       image: '/assets/images/alberto.png'
     }
-    this.props.addStaff({newStaff})
+    this.props.postStaff({newStaff})
     this.props.resetAddStaffForm();
   }
 

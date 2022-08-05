@@ -102,7 +102,7 @@ class StaffList extends Component {
         </Breadcrumb>
         <div className="row rounded-3">
           <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">            
-            <AddStaffModal addStaff={this.props.addStaff} id={this.props.staffs.length} departments={this.props.departments} resetAddStaffForm={this.props.resetAddStaffForm}/>
+            <AddStaffModal postStaff={this.props.postStaff} id={this.props.staffs.length} departments={this.props.departments} resetAddStaffForm={this.props.resetAddStaffForm}/>
           </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
             <Form className="d-flex" role="search">
