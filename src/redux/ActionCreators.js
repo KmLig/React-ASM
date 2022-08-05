@@ -44,6 +44,48 @@ export const postStaff = ({newStaff}) => (dispatch) => {
   .then(response => dispatch(addStaff(response)))
   .catch(error =>  { console.log('Post staff', error.message); alert('New staff could not be posted\nError: '+error.message); });
 };
+export const updateStaff = (staff) => ({
+  type: ActionTypes.UPDATE_STAFF,
+  payload: STAFFS.concat(staff)
+});
+
+export const patchStaff = ({ updatedStaff }) => (dispatch) => {
+const updatedStaff_patch = {
+  id: updatedStaff.id,
+  name: updatedStaff.name,
+  doB: updatedStaff.doB,
+  startDate: updatedStaff.startDate,
+  departmentId: updatedStaff.departmentId,
+  salaryScale: updatedStaff.salaryScale,
+  annualLeave: updatedStaff.annualLeave,
+  overTime: updatedStaff.overTime,
+  image: updatedStaff.image
+}
+
+return fetch(baseUrl + 'staffs', {
+    method: 'PATCH',
+    body: JSON.stringify(updatedStaff_patch),
+    headers: {
+        "Content-Type": "application/json"
+      },
+    credentials: "same-origin"
+})
+.then(response => {
+    if (response.ok) {
+      return response;
+    } else {
+      var error = new Error('Error ' + response.status + ': ' + response.statusText);
+      error.response = response;
+      throw error;
+    }
+  },
+  error => {
+        throw error;
+  })
+.then(response => response.json())
+.then(response => dispatch(updateStaff(response)))
+.catch(error =>  { console.log('Patch staff', error.message); alert('This staff could not be patched\nError: '+error.message); });
+};
   
 export const fetchStaffs = () => (dispatch) => {
     dispatch(staffsLoading(true));

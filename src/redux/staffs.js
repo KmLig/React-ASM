@@ -18,6 +18,9 @@ export const Staffs  = (state = {
 
         case ActionTypes.STAFFS_RENDERING:
             return {...state, isLoading: false, errMess: null, staffs: action.payload}
+            
+        case ActionTypes.UPDATE_STAFF:
+            return {...state, isLoading: false, errMess: null, staffs: action.payload}
 
         default:
             return state;

@@ -12,6 +12,7 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import {
   postStaff,
+  patchStaff,
   fetchDepartments,
   fetchSalaries,
   fetchStaffs,
@@ -28,6 +29,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({
   postStaff: ({ newStaff }) => dispatch(postStaff({ newStaff })),
+  patchStaff: ({ updatedStaff }) => dispatch(patchStaff({ updatedStaff})),
   fetchStaffs: () => {
     dispatch(fetchStaffs());
   },
@@ -65,6 +67,8 @@ class Main extends Component {
           isLoading={this.props.staffs.isLoading}
           errMess={this.props.staffs.errMess}
           departments={this.props.departments.departments}
+          patchStaff={this.props.patchStaff}
+          staffId={match.params.staffId}
         />
       );
     };

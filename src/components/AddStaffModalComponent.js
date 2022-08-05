@@ -12,7 +12,7 @@ import {
   FormFeedback,
   Row
 } from "reactstrap";
-import { Control, Form, Errors, acitons } from "react-redux-form";
+import { Control, Form, Errors, actions } from "react-redux-form";
 import { STAFFS } from "../shared/staff";
 
 const required = (val) => val && val.length;
