@@ -105,9 +105,9 @@ const staff_delete = {
   image: deletedStaff.image
 }
 
-return fetch(baseUrl + 'staffs', {
+return fetch(baseUrl + 'staffs/' + staff_delete.id, {
     method: 'DELETE',
-    body: JSON.stringify(staff_delete),
+    //body: JSON.stringify(staff_delete),
     headers: {
         "Content-Type": "application/json"
       },

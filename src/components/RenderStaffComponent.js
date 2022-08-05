@@ -114,7 +114,7 @@ class RenderStaff extends Component {
       overTime: values.overTime,
       image: "/assets/images/alberto.png",
     };
-    this.props.deletedStaff({ deletedStaff });
+    this.props.deleteStaff({ deletedStaff });
     //this.props.resetAddStaffForm();
   }
   render() {
