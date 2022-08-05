@@ -150,8 +150,7 @@ class RenderStaff extends Component {
                   {dateFormat(this.props.staff.startDate, "dd/mm/yyyy")}
                 </CardText>
                 <CardText>
-                  Phòng ban:
-                  {
+                  Phòng ban: {
                     department && department.name // check null
                   }
                 </CardText>
