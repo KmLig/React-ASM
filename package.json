@@ -1,6 +1,7 @@
 {
   "name": "lab10_4",
   "version": "0.1.0",
+  "homepage": "https://kmlig.github.io/react-asm/",
   "private": true,
   "dependencies": {
     "bootstrap": "5.2.0",
@@ -9,6 +10,7 @@
     "css-loader": "^1.0.0",
     "dateformat": "^4.5.1",
     "font-awesome": "4.7.0",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.0",
     "prop-types": "15.6.0",
     "react": "^16.3.2",
@@ -27,6 +29,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

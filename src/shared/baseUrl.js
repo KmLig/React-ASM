@@ -1,1 +1,1 @@
-export const baseUrl = 'https://nodejstesthatn.herokuapp.com/';
+export const baseUrl = 'https://rjs-101x-asignment-04-backend.vercel.app/';

@@ -62,7 +62,7 @@ class RenderStaff extends Component {
     console.log(values);
     var x;
     if (values.department === "sale") {
-      x ="Dept01";
+      x = "Dept01";
     } else if (values.department === "hr") {
       x = "Dept02";
     } else if (values.department === "marketing") {
@@ -96,7 +96,7 @@ class RenderStaff extends Component {
     console.log(values);
     var x;
     if (values.department === "sale") {
-      x ="Dept01";
+      x = "Dept01";
     } else if (values.department === "hr") {
       x = "Dept02";
     } else if (values.department === "marketing") {
@@ -150,7 +150,8 @@ class RenderStaff extends Component {
                   {dateFormat(this.props.staff.startDate, "dd/mm/yyyy")}
                 </CardText>
                 <CardText>
-                  Phòng ban: {
+                  Phòng ban:{" "}
+                  {
                     department && department.name // check null
                   }
                 </CardText>
@@ -406,7 +407,7 @@ class RenderStaff extends Component {
                         model="addStaff"
                         className=""
                         onSubmit={(values) => this.handleSubmit_2(values)}
-                      >                          
+                      >
                         <ModalFooter>
                           <Button
                             type="submit"

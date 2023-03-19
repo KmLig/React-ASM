@@ -31,7 +31,7 @@ class StaffList extends Component {
     this.state = {
       selectedStaff: null,
       selectedCol: "col-6 col-md-4 col-lg-2 mt-3",
-      search: "",
+      search: ""
     };
     this.onColSelect = this.onColSelect.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
@@ -47,8 +47,8 @@ class StaffList extends Component {
     this.setState({ search: event.target.value });
   }
 
-  renderStaffList(a) {
-    const staffList = a.map((staff) => {
+  renderStaffList(staffs) {
+    const staffList = staffs.map((staff) => {
       return (
         <div className={this.state.selectedCol}>
           <Card key={staff.id} onClick={() => this.onStaffSelect(staff)}>
@@ -68,17 +68,17 @@ class StaffList extends Component {
     if (this.props.staffsLoading) {
       return (
         <Loading />
-      )    
+      )
     }
     else if (this.props.staffFailed) {
       return (
         <h4>{this.props.staffFailed}</h4>
       )
     }
-    else  {
-      return staffList;            
+    else {
+      return staffList;
     }
-    
+
   }
 
   render() {
@@ -89,7 +89,7 @@ class StaffList extends Component {
     //trả về mỗi staff trong mảng nếu có chứa từ khóa trong search
     const filteredStaff = this.props.staffs.filter((staff) => {
       return staff.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-    });    
+    });
 
     return (
       <div className="container rounded-3">
@@ -101,8 +101,8 @@ class StaffList extends Component {
           <BreadcrumbItem active>Staff list</BreadcrumbItem>
         </Breadcrumb>
         <div className="row rounded-3">
-          <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">            
-            <AddStaffModal postStaff={this.props.postStaff} id={this.props.staffs.length} departments={this.props.departments} resetAddStaffForm={this.props.resetAddStaffForm}/>
+          <div className="col-12 p-4 col-lg-2 bg-warning rounded-3 mb-2">
+            <AddStaffModal postStaff={this.props.postStaff} id={this.props.staffs.length} departments={this.props.departments} resetAddStaffForm={this.props.resetAddStaffForm} />
           </div>
           <div className="col-12 p-4 col-lg-5 offset-lg-1 bg-success rounded-3 mb-2">
             <Form className="d-flex" role="search">
